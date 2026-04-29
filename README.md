@@ -3,7 +3,7 @@
 <div align="center">
 
 ### 🛠️ Languages & Tools
-![Coding Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-KletteE&layout=compact&theme=dark&hide_border=true&card_width=445)
+![Coding Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Klette&layout=compact&theme=dark&hide_border=true&card_width=445)
 
 ### 📊 GitHub Stats
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Matthew-Klette&show_icons=true&theme=dark&hide_border=true&rank_icon=github)

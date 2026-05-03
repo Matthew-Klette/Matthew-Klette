@@ -1,0 +1,169 @@
+<svg viewBox="0 0 900 580" xmlns="http://www.w3.org/2000/svg" width="900">
+  <defs>
+    <style>
+      @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+      @keyframes pulse  { 0%,100% { r:4; opacity:1; } 50% { r:6; opacity:.4; } }
+      @keyframes blink  { 0%,100% { opacity:1; } 50% { opacity:.2; } }
+
+      .f0 { animation: fadeUp .5s cubic-bezier(.22,1,.36,1) .0s  both; }
+      .f1 { animation: fadeUp .5s cubic-bezier(.22,1,.36,1) .08s both; }
+      .f2 { animation: fadeUp .5s cubic-bezier(.22,1,.36,1) .16s both; }
+      .f3 { animation: fadeUp .5s cubic-bezier(.22,1,.36,1) .24s both; }
+      .f4 { animation: fadeUp .5s cubic-bezier(.22,1,.36,1) .32s both; }
+      .f5 { animation: fadeUp .5s cubic-bezier(.22,1,.36,1) .40s both; }
+      .f6 { animation: fadeUp .5s cubic-bezier(.22,1,.36,1) .48s both; }
+      .f7 { animation: fadeUp .5s cubic-bezier(.22,1,.36,1) .56s both; }
+      .f8 { animation: fadeUp .5s cubic-bezier(.22,1,.36,1) .64s both; }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; }
+      .blink { animation: blink 1.8s ease-in-out infinite; }
+
+      text { font-family: 'Georgia', 'Times New Roman', serif; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="580" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#080b10"/>
+      <stop offset="100%" stop-color="#090c12"/>
+    </linearGradient>
+
+    <linearGradient id="gold-h" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#c9a96e" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#c9a96e"/>
+      <stop offset="70%"  stop-color="#e8c98a"/>
+      <stop offset="100%" stop-color="#c9a96e" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="hot-bar" x1="0" y1="0" x2="0" y2="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#e05a3a"/>
+      <stop offset="100%" stop-color="#c94428"/>
+    </linearGradient>
+
+    <linearGradient id="review-bar" x1="0" y1="0" x2="0" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#c9a96e"/>
+      <stop offset="100%" stop-color="#a8863e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base -->
+  <rect width="900" height="580" fill="url(#bg2)"/>
+
+  <!-- Subtle grid -->
+  <g opacity=".018" stroke="#c9a96e" stroke-width=".5">
+    <line x1="0"   y1="145" x2="900" y2="145"/>
+    <line x1="0"   y1="290" x2="900" y2="290"/>
+    <line x1="0"   y1="435" x2="900" y2="435"/>
+    <line x1="225" y1="0"   x2="225" y2="580"/>
+    <line x1="450" y1="0"   x2="450" y2="580"/>
+    <line x1="675" y1="0"   x2="675" y2="580"/>
+  </g>
+
+  <!-- Section label -->
+  <g class="f0">
+    <line x1="36" y1="42" x2="120" y2="42" stroke="#c9a96e" stroke-width=".5" stroke-opacity=".5"/>
+    <text x="128" y="47" fill="#c9a96e" font-size="10" class="sans" letter-spacing="3" font-weight="500">CURRENT SPRINT</text>
+    <line x1="290" y1="42" x2="864" y2="42" stroke="#c9a96e" stroke-width=".5" stroke-opacity=".15"/>
+  </g>
+
+  <!-- === HIGH PRIORITY BLOCK === -->
+  <g class="f1">
+    <text x="36" y="80" fill="#3d4450" font-size="9" class="sans" letter-spacing="3">IN PROGRESS</text>
+  </g>
+
+  <!-- Ticket 1 — high priority -->
+  <g class="f2">
+    <rect x="36" y="92" width="828" height="68" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
+    <!-- Left accent bar - hot -->
+    <rect x="36" y="92" width="3" height="68" rx="2" fill="url(#hot-bar)"/>
+    <!-- Priority indicator -->
+    <circle class="pulse" cx="60" cy="126" r="4" fill="#e05a3a"/>
+    <!-- Ticket ID -->
+    <text x="78" y="114" fill="#3d4450" font-size="9" class="sans" letter-spacing="2">KUHL-1353  ·  4 PTS</text>
+    <!-- Title -->
+    <text x="78" y="134" fill="#dde3ed" font-size="14" font-weight="400" letter-spacing=".3">GTM: Wishlist localStorage — Expiry, Type Safety &amp; Page Location Fix</text>
+    <!-- Description -->
+    <text x="78" y="151" fill="#3d4450" font-size="10" class="sans" letter-spacing=".2">Fixing infinite localStorage expiry · type coercion bugs · wrong page triggers across three Custom HTML tags</text>
+    <!-- Status badge -->
+    <rect x="774" y="104" width="78" height="20" rx="2" fill="#1a1008" stroke="#e05a3a" stroke-width=".5"/>
+    <text x="813" y="118" text-anchor="middle" fill="#e05a3a" font-size="9" class="sans" letter-spacing="2">IN PROGRESS</text>
+  </g>
+
+  <!-- Ticket 2 — high priority -->
+  <g class="f3">
+    <rect x="36" y="172" width="828" height="68" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
+    <rect x="36" y="172" width="3" height="68" rx="2" fill="url(#hot-bar)"/>
+    <circle class="pulse" cx="60" cy="206" r="4" fill="#e05a3a"/>
+    <text x="78" y="194" fill="#3d4450" font-size="9" class="sans" letter-spacing="2">KUHL-1352  ·  16 PTS</text>
+    <text x="78" y="214" fill="#dde3ed" font-size="14" font-weight="400" letter-spacing=".3">GTM: Add to Cart from Wishlist — Tracking Rewrite, BQ Investigation &amp; Dashboard Fix</text>
+    <text x="78" y="231" fill="#3d4450" font-size="10" class="sans" letter-spacing=".2">Was firing with zero product data · full ecommerce.items rewrite · BigQuery table audit · Wishlist Stats dashboard corrected</text>
+    <rect x="774" y="184" width="78" height="20" rx="2" fill="#1a1008" stroke="#e05a3a" stroke-width=".5"/>
+    <text x="813" y="198" text-anchor="middle" fill="#e05a3a" font-size="9" class="sans" letter-spacing="2">IN PROGRESS</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="36" y1="258" x2="864" y2="258" stroke="#1a1f28" stroke-width="1" class="f3"/>
+
+  <!-- IN REVIEW label -->
+  <g class="f4">
+    <text x="36" y="282" fill="#3d4450" font-size="9" class="sans" letter-spacing="3">IN REVIEW  —  6 TICKETS</text>
+  </g>
+
+  <!-- Review tickets grid — 2 columns -->
+  <!-- Row 1 -->
+  <g class="f5">
+    <rect x="36"  y="294" width="402" height="52" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
+    <rect x="36"  y="294" width="3"   height="52" rx="2" fill="url(#review-bar)"/>
+    <text x="52"  y="311" fill="#3d4450" font-size="8" class="sans" letter-spacing="2">KUHL-1331  ·  4 PTS</text>
+    <text x="52"  y="327" fill="#c8cfd9" font-size="12" font-weight="400" letter-spacing=".2">PDP Recommendations — recommendation_click</text>
+    <text x="52"  y="339" fill="#2d3340" font-size="9"  class="sans">New event · recommendation_title · position · source_item_id</text>
+
+    <rect x="462" y="294" width="402" height="52" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
+    <rect x="462" y="294" width="3"   height="52" rx="2" fill="url(#review-bar)"/>
+    <text x="478" y="311" fill="#3d4450" font-size="8" class="sans" letter-spacing="2">KUHL-1330  ·  4 PTS</text>
+    <text x="478" y="327" fill="#c8cfd9" font-size="12" font-weight="400" letter-spacing=".2">Cart Edit Feature — cart_edit event</text>
+    <text x="478" y="339" fill="#2d3340" font-size="9"  class="sans">edit_type · item_id · old_value · new_value parameters</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g class="f6">
+    <rect x="36"  y="356" width="402" height="52" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
+    <rect x="36"  y="356" width="3"   height="52" rx="2" fill="url(#review-bar)"/>
+    <text x="52"  y="373" fill="#3d4450" font-size="8" class="sans" letter-spacing="2">KUHL-1328  ·  4 PTS</text>
+    <text x="52"  y="389" fill="#c8cfd9" font-size="12" font-weight="400" letter-spacing=".2">Save for Later — Return-to-Purchase Analysis</text>
+    <text x="52"  y="401" fill="#2d3340" font-size="9"  class="sans">Event audit · parameter validation · purchase attribution</text>
+
+    <rect x="462" y="356" width="402" height="52" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
+    <rect x="462" y="356" width="3"   height="52" rx="2" fill="url(#review-bar)"/>
+    <text x="478" y="373" fill="#3d4450" font-size="8" class="sans" letter-spacing="2">KUHL-1327  ·  4 PTS</text>
+    <text x="478" y="389" fill="#c8cfd9" font-size="12" font-weight="400" letter-spacing=".2">Favorites — Usage &amp; Return-to-Purchase Analysis</text>
+    <text x="478" y="401" fill="#2d3340" font-size="9"  class="sans">add_to_favorites · remove_from_favorites validation + attribution</text>
+  </g>
+
+  <!-- Row 3 -->
+  <g class="f7">
+    <rect x="36"  y="418" width="402" height="52" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
+    <rect x="36"  y="418" width="3"   height="52" rx="2" fill="url(#review-bar)"/>
+    <text x="52"  y="435" fill="#3d4450" font-size="8" class="sans" letter-spacing="2">KUHL-1326  ·  2 PTS</text>
+    <text x="52"  y="451" fill="#c8cfd9" font-size="12" font-weight="400" letter-spacing=".2">PDP Desktop Dropdown — Before / After Analysis</text>
+    <text x="52"  y="463" fill="#2d3340" font-size="9"  class="sans">dropdown_click event · right bar migration · conversion delta</text>
+
+    <rect x="462" y="418" width="402" height="52" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
+    <rect x="462" y="418" width="3"   height="52" rx="2" fill="url(#review-bar)"/>
+    <text x="478" y="435" fill="#3d4450" font-size="8" class="sans" letter-spacing="2">KUHL-1329  ·  1 PT</text>
+    <text x="478" y="451" fill="#c8cfd9" font-size="12" font-weight="400" letter-spacing=".2">PDP Mobile Image Ratio &amp; Above Fold Changes</text>
+    <text x="478" y="463" fill="#2d3340" font-size="9"  class="sans">Device segmentation · above-fold before/after · view_item</text>
+  </g>
+
+  <!-- Bottom report row -->
+  <g class="f8">
+    <rect x="36" y="482" width="828" height="52" rx="3" fill="#0b0f16" stroke="#c9a96e" stroke-width=".4" stroke-opacity=".25"/>
+    <rect x="36" y="482" width="3"   height="52" rx="2" fill="#c9a96e" opacity=".5"/>
+    <text x="52" y="499" fill="#3d4450" font-size="8" class="sans" letter-spacing="2">KUHL-962  ·  4 PTS</text>
+    <text x="52" y="515" fill="#c8cfd9" font-size="12" font-weight="400" letter-spacing=".2">Category Sections Utilization Report</text>
+    <text x="52" y="527" fill="#2d3340" font-size="9"  class="sans">Session segmentation · sub-section click tracking · session value vs non-users · conversion impact</text>
+    <rect x="774" y="494" width="78" height="20" rx="2" fill="#0f1209" stroke="#c9a96e" stroke-width=".4"/>
+    <text x="813" y="508" text-anchor="middle" fill="#c9a96e" font-size="9" class="sans" letter-spacing="2">ACTIVE</text>
+  </g>
+
+  <!-- Bottom border -->
+  <line x1="0" y1="579" x2="900" y2="579" stroke="url(#gold-h)" stroke-width=".8" stroke-opacity=".3"/>
+</svg>

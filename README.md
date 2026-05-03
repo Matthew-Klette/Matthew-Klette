@@ -23,23 +23,11 @@ Complete rewrite of `add_to_cart_from_wishlist` — was firing with zero product
 📊 **Category Sections Utilization Report** — session segmentation, conversion impact, sub-section click tracking
 
 ---
-
 ## 🛠️ Tech Stack
 
-![Google Tag Manager](https://img.shields.io/badge/Google%20Tag%20Manager-246FDB?style=for-the-badge&logo=googletagmanager&logoColor=white)
-![BigQuery](https://img.shields.io/badge/BigQuery-669DF6?style=for-the-badge&logo=googlebigquery&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Google Analytics](https://img.shields.io/badge/Google%20Analytics-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFA500?style=for-the-badge&logo=firebase&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-E74C3C?style=for-the-badge&logo=n8n&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Linear](https://img.shields.io/badge/Linear-5E4DB2?style=for-the-badge&logo=linear&logoColor=white)
-
----
+<div align="center">
+  <img src="stack.svg" alt="Tech Stack" width="800"/>
+</div>
 
 ## 📊 GitHub Stats
 

@@ -99,9 +99,9 @@
       <text x="504" y="247" text-anchor="middle" fill="#242438" font-size="7"  class="ss" letter-spacing="1.5">PRECISION TRACKING</text>
 
       <rect x="598" y="188" width="152" height="68" rx="2" fill="#0f0f18" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".3"/>
-      <text x="674" y="216" text-anchor="middle" fill="#ff9a3c" font-size="13" class="ss" letter-spacing=".5">BCA · CS</text>
+      <text x="674" y="216" text-anchor="middle" fill="#ff9a3c" font-size="13" class="ss" letter-spacing=".5">BCAD · CS</text>
       <text x="674" y="233" text-anchor="middle" fill="#383850" font-size="8"  class="ss" letter-spacing="2">COMPUTER SCIENCE</text>
-      <text x="674" y="247" text-anchor="middle" fill="#242438" font-size="7"  class="ss" letter-spacing="1.5">NMU · SOUTH AFRICA</text>
+      <text x="674" y="247" text-anchor="middle" fill="#242438" font-size="7"  class="ss" letter-spacing="1.5">EMERIS · SOUTH AFRICA</text>
     </g>
   </g>
 </svg>

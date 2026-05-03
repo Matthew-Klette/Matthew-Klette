@@ -11,7 +11,7 @@
       .f6{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .42s both}
       .f7{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .49s both}
       .f8{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .56s both}
-      .f9{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .63s both}
+      .f9{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .63s both} 
       text{font-family:'Georgia','Times New Roman',serif}
       .ss{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
     </style>

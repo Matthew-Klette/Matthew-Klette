@@ -1,0 +1,207 @@
+<svg viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg" width="800">
+  <defs>
+    <style>
+      @keyframes marquee {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-50%); }
+      }
+      .track { animation: marquee 18s linear infinite; }
+      .track:hover { animation-play-state: paused; }
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .badge-text { font-size: 12px; font-weight: 600; fill: #ffffff; }
+      .badge-sub  { font-size: 10px; font-weight: 400; fill: #8b949e; }
+    </style>
+  </defs>
+
+  <rect width="800" height="120" fill="#0d1117"/>
+
+  <!-- Left fade -->
+  <defs>
+    <linearGradient id="fade-l" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0d1117" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fade-r" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <clipPath id="clip">
+    <rect x="48" y="0" width="704" height="120"/>
+  </clipPath>
+
+  <g clip-path="url(#clip)">
+    <g class="track">
+
+      <!-- === FIRST SET === -->
+
+      <!-- GTM -->
+      <g transform="translate(0,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">🏷️</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">GTM</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Tag Manager</text>
+      </g>
+
+      <!-- BigQuery -->
+      <g transform="translate(116,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">📊</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">BigQuery</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Data Warehouse</text>
+      </g>
+
+      <!-- JavaScript -->
+      <g transform="translate(232,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22" fill="#F7DF1E">JS</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">JavaScript</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">ES6+</text>
+      </g>
+
+      <!-- Python -->
+      <g transform="translate(348,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">🐍</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">Python</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Scripting</text>
+      </g>
+
+      <!-- SQL -->
+      <g transform="translate(464,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">🗄️</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">SQL</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">PostgreSQL</text>
+      </g>
+
+      <!-- React -->
+      <g transform="translate(580,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22" fill="#61DAFB">⚛</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">React</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Frontend</text>
+      </g>
+
+      <!-- Docker -->
+      <g transform="translate(696,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">🐳</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">Docker</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Containers</text>
+      </g>
+
+      <!-- n8n -->
+      <g transform="translate(812,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">⚙️</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">n8n</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Automation</text>
+      </g>
+
+      <!-- Firebase -->
+      <g transform="translate(928,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">🔥</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">Firebase</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Realtime DB</text>
+      </g>
+
+      <!-- AWS -->
+      <g transform="translate(1044,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">☁️</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">AWS</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Cloud</text>
+      </g>
+
+      <!-- === DUPLICATE SET (seamless loop) === -->
+
+      <!-- GTM -->
+      <g transform="translate(1160,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">🏷️</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">GTM</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Tag Manager</text>
+      </g>
+
+      <!-- BigQuery -->
+      <g transform="translate(1276,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">📊</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">BigQuery</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Data Warehouse</text>
+      </g>
+
+      <!-- JavaScript -->
+      <g transform="translate(1392,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22" fill="#F7DF1E">JS</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">JavaScript</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">ES6+</text>
+      </g>
+
+      <!-- Python -->
+      <g transform="translate(1508,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">🐍</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">Python</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Scripting</text>
+      </g>
+
+      <!-- SQL -->
+      <g transform="translate(1624,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">🗄️</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">SQL</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">PostgreSQL</text>
+      </g>
+
+      <!-- React -->
+      <g transform="translate(1740,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22" fill="#61DAFB">⚛</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">React</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Frontend</text>
+      </g>
+
+      <!-- Docker -->
+      <g transform="translate(1856,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">🐳</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">Docker</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Containers</text>
+      </g>
+
+      <!-- n8n -->
+      <g transform="translate(1972,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">⚙️</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">n8n</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Automation</text>
+      </g>
+
+      <!-- Firebase -->
+      <g transform="translate(2088,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">🔥</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">Firebase</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Realtime DB</text>
+      </g>
+
+      <!-- AWS -->
+      <g transform="translate(2204,20)">
+        <rect width="100" height="80" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" class="badge-text" font-size="22">☁️</text>
+        <text x="50" y="52" text-anchor="middle" class="badge-text">AWS</text>
+        <text x="50" y="66" text-anchor="middle" class="badge-sub">Cloud</text>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- Fade overlays -->
+  <rect x="0"   y="0" width="64"  height="120" fill="url(#fade-l)"/>
+  <rect x="736" y="0" width="64"  height="120" fill="url(#fade-r)"/>
+</svg>

@@ -1,54 +1,44 @@
-<svg viewBox="0 0 900 110" xmlns="http://www.w3.org/2000/svg" width="900">
+<svg viewBox="0 0 900 90" xmlns="http://www.w3.org/2000/svg" width="900">
   <defs>
     <style>
-      @keyframes fadeUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
-      .f0 { animation: fadeUp .5s cubic-bezier(.22,1,.36,1) .0s both; }
-      .f1 { animation: fadeUp .5s cubic-bezier(.22,1,.36,1) .1s both; }
-      .f2 { animation: fadeUp .5s cubic-bezier(.22,1,.36,1) .2s both; }
-      text { font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+      @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+      .f0{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .0s both}
+      .f1{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .1s both}
+      text{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
     </style>
-    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="110" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#090c12"/>
-      <stop offset="100%" stop-color="#080b10"/>
+    <linearGradient id="cbg" x1="0" y1="0" x2="0" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0b0b13"/><stop offset="100%" stop-color="#09090f"/>
     </linearGradient>
-    <linearGradient id="gold-h4" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#c9a96e" stop-opacity="0"/>
-      <stop offset="30%"  stop-color="#c9a96e"/>
-      <stop offset="70%"  stop-color="#e8c98a"/>
-      <stop offset="100%" stop-color="#c9a96e" stop-opacity="0"/>
+    <linearGradient id="coh" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#ff6a00" stop-opacity="0"/>
+      <stop offset="35%"  stop-color="#ff6a00"/>
+      <stop offset="65%"  stop-color="#ff9a3c"/>
+      <stop offset="100%" stop-color="#ff6a00" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <rect width="900" height="110" fill="url(#bg4)"/>
+  <rect width="900" height="90" fill="url(#cbg)"/>
+  <line x1="0" y1="1" x2="900" y2="1" stroke="url(#coh)" stroke-width=".8" stroke-opacity=".35"/>
 
-  <!-- Top rule -->
-  <line x1="0" y1="1" x2="900" y2="1" stroke="url(#gold-h4)" stroke-width=".8" stroke-opacity=".3"/>
-
-  <!-- Label -->
   <g class="f0">
-    <line x1="36" y1="34" x2="100" y2="34" stroke="#c9a96e" stroke-width=".5" stroke-opacity=".4"/>
-    <text x="108" y="39" fill="#c9a96e" font-size="9" letter-spacing="3" font-weight="500">CONNECT</text>
-    <line x1="192" y1="34" x2="864" y2="34" stroke="#c9a96e" stroke-width=".5" stroke-opacity=".1"/>
+    <line x1="36" y1="30" x2="108" y2="30" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".4"/>
+    <text x="116" y="35" fill="#ff6a00" font-size="8" letter-spacing="3" font-weight="600">CONNECT</text>
+    <line x1="192" y1="30" x2="864" y2="30" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".08"/>
   </g>
 
-  <!-- Three connect items centered -->
   <g class="f1">
-    <!-- LinkedIn -->
-    <rect x="200" y="52" width="148" height="36" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-    <text x="274" y="67" text-anchor="middle" fill="#3d4450" font-size="8" letter-spacing="2">LINKEDIN</text>
-    <text x="274" y="80" text-anchor="middle" fill="#c9a96e" font-size="10" letter-spacing=".5">matthew-klette</text>
+    <rect x="196" y="46" width="160" height="30" rx="2" fill="#0d0d17" stroke="#1e1e2e" stroke-width="1"/>
+    <text x="276" y="58" text-anchor="middle" fill="#3a3a52" font-size="7" letter-spacing="2">LINKEDIN</text>
+    <text x="276" y="70" text-anchor="middle" fill="#ff9a3c" font-size="9" letter-spacing=".5">matthew-klette</text>
 
-    <!-- GitHub -->
-    <rect x="376" y="52" width="148" height="36" rx="3" fill="#0b0f16" stroke="#c9a96e" stroke-width=".4" stroke-opacity=".4"/>
-    <text x="450" y="67" text-anchor="middle" fill="#3d4450" font-size="8" letter-spacing="2">GITHUB</text>
-    <text x="450" y="80" text-anchor="middle" fill="#c9a96e" font-size="10" letter-spacing=".5">Matthew-Klette</text>
+    <rect x="370" y="46" width="160" height="30" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
+    <text x="450" y="58" text-anchor="middle" fill="#3a3a52" font-size="7" letter-spacing="2">GITHUB</text>
+    <text x="450" y="70" text-anchor="middle" fill="#ff9a3c" font-size="9" letter-spacing=".5">Matthew-Klette</text>
 
-    <!-- KUHL -->
-    <rect x="552" y="52" width="148" height="36" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-    <text x="626" y="67" text-anchor="middle" fill="#3d4450" font-size="8" letter-spacing="2">COMPANY</text>
-    <text x="626" y="80" text-anchor="middle" fill="#c9a96e" font-size="10" letter-spacing=".5">KUHL  ·  MarTech</text>
+    <rect x="544" y="46" width="160" height="30" rx="2" fill="#0d0d17" stroke="#1e1e2e" stroke-width="1"/>
+    <text x="624" y="58" text-anchor="middle" fill="#3a3a52" font-size="7" letter-spacing="2">COMPANY</text>
+    <text x="624" y="70" text-anchor="middle" fill="#ff9a3c" font-size="9" letter-spacing=".5">KUHL.COM</text>
   </g>
 
-  <!-- Bottom rule -->
-  <line x1="0" y1="109" x2="900" y2="109" stroke="url(#gold-h4)" stroke-width=".8" stroke-opacity=".2"/>
+  <line x1="0" y1="89" x2="900" y2="89" stroke="url(#coh)" stroke-width=".5" stroke-opacity=".15"/>
 </svg>

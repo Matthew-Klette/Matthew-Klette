@@ -1,0 +1,117 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" width="800">
+  <defs>
+    <style>
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(16px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; r: 7; }
+        50%       { opacity: 0.5; r: 10; }
+      }
+      @keyframes scanline {
+        from { transform: translateX(-100%); }
+        to   { transform: translateX(110%); }
+      }
+      .g1 { animation: fadeUp 0.5s ease-out 0.0s both; }
+      .g2 { animation: fadeUp 0.5s ease-out 0.15s both; }
+      .g3 { animation: fadeUp 0.5s ease-out 0.30s both; }
+      .g4 { animation: fadeUp 0.5s ease-out 0.45s both; }
+      .g5 { animation: fadeUp 0.5s ease-out 0.60s both; }
+      .dot { animation: pulse 2.2s ease-in-out infinite; }
+      .scan { animation: scanline 3.5s linear infinite; }
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="#0d1117"/>
+
+  <!-- Top accent bar -->
+  <rect width="800" height="2" fill="#ff6b6b"/>
+
+  <!-- Scanline sweep -->
+  <rect class="scan" x="0" y="0" width="120" height="420" fill="url(#sweep)" opacity="0.04"/>
+  <defs>
+    <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#ff8c42"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Name + title -->
+  <g class="g1">
+    <text x="40" y="72"  fill="#ffffff" font-size="38" font-weight="700" letter-spacing="-1">Matt Klette</text>
+    <text x="40" y="100" fill="#8b949e" font-size="15" font-weight="400">MarTech Engineer  •  GTM Instrumentation  •  Analytics at Scale</text>
+  </g>
+
+  <!-- Live dot -->
+  <g class="g1">
+    <circle class="dot" cx="764" cy="56" r="7" fill="#ff6b6b"/>
+    <text x="751" y="80" fill="#8b949e" font-size="11" text-anchor="middle">LIVE</text>
+  </g>
+
+  <!-- Divider -->
+  <g class="g2">
+    <line x1="40" y1="122" x2="760" y2="122" stroke="#21262d" stroke-width="1"/>
+  </g>
+
+  <!-- Stat cards row -->
+  <g class="g2">
+    <!-- Card 1 -->
+    <rect x="40"  y="138" width="160" height="72" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+    <text x="56"  y="160" fill="#8b949e" font-size="10" font-weight="600" letter-spacing="1">IN PROGRESS</text>
+    <text x="56"  y="190" fill="#ffffff" font-size="30" font-weight="700">2</text>
+    <text x="56"  y="204" fill="#6e7681" font-size="11">High priority</text>
+
+    <!-- Card 2 -->
+    <rect x="216" y="138" width="160" height="72" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+    <text x="232" y="160" fill="#8b949e" font-size="10" font-weight="600" letter-spacing="1">IN REVIEW</text>
+    <text x="232" y="190" fill="#ffffff" font-size="30" font-weight="700">6</text>
+    <text x="232" y="204" fill="#6e7681" font-size="11">Ready to ship</text>
+
+    <!-- Card 3 -->
+    <rect x="392" y="138" width="160" height="72" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+    <text x="408" y="160" fill="#8b949e" font-size="10" font-weight="600" letter-spacing="1">STACK</text>
+    <text x="408" y="190" fill="#ffffff" font-size="18" font-weight="700">GTM + BQ</text>
+    <text x="408" y="204" fill="#6e7681" font-size="11">Event tracking</text>
+
+    <!-- Card 4 -->
+    <rect x="568" y="138" width="192" height="72" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+    <text x="584" y="160" fill="#8b949e" font-size="10" font-weight="600" letter-spacing="1">LOCATION</text>
+    <text x="584" y="190" fill="#ffffff" font-size="18" font-weight="700">PE, South Africa</text>
+    <text x="584" y="204" fill="#6e7681" font-size="11">Port Elizabeth 🇿🇦</text>
+  </g>
+
+  <!-- Section: Active work -->
+  <g class="g3">
+    <text x="40" y="254" fill="#8b949e" font-size="11" font-weight="600" letter-spacing="1.5">CURRENTLY SHIPPING</text>
+  </g>
+
+  <!-- Ticket 1 -->
+  <g class="g4">
+    <rect x="40" y="268" width="720" height="58" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+    <rect x="40" y="268" width="3"   height="58" rx="2" fill="url(#fire)"/>
+    <text x="56" y="289" fill="#ffffff" font-size="13" font-weight="600">GTM: Wishlist localStorage — Expiry, Type Safety &amp; Page Location Fix</text>
+    <text x="56" y="306" fill="#6e7681" font-size="11">KUHL-1353  •  4 pts  •  Fixing infinite expiry, type coercion bugs, wrong page triggers</text>
+    <!-- Badge -->
+    <rect x="686" y="278" width="66" height="20" rx="10" fill="#1f3a28" stroke="#2d5c3c" stroke-width="1"/>
+    <text x="719" y="292" fill="#3fb950" font-size="10" font-weight="600" text-anchor="middle">IN PROGRESS</text>
+  </g>
+
+  <!-- Ticket 2 -->
+  <g class="g5">
+    <rect x="40" y="340" width="720" height="58" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+    <rect x="40" y="340" width="3"   height="58" rx="2" fill="url(#fire)"/>
+    <text x="56" y="361" fill="#ffffff" font-size="13" font-weight="600">GTM: Add to Cart from Wishlist — Rewrite, BQ Investigation &amp; Dashboard Fix</text>
+    <text x="56" y="378" fill="#6e7681" font-size="11">KUHL-1352  •  16 pts  •  Was firing with zero product data — full ecommerce.items rewrite</text>
+    <!-- Badge -->
+    <rect x="686" y="350" width="66" height="20" rx="10" fill="#1f3a28" stroke="#2d5c3c" stroke-width="1"/>
+    <text x="719" y="364" fill="#3fb950" font-size="10" font-weight="600" text-anchor="middle">IN PROGRESS</text>
+  </g>
+</svg>

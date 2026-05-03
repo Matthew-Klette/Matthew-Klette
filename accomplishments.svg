@@ -1,0 +1,193 @@
+<svg viewBox="0 0 900 720" xmlns="http://www.w3.org/2000/svg" width="900">
+  <defs>
+    <style>
+      @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+      .f0{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .00s both}
+      .f1{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .07s both}
+      .f2{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .14s both}
+      .f3{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .21s both}
+      .f4{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .28s both}
+      .f5{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .35s both}
+      .f6{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .42s both}
+      .f7{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .49s both}
+      text{font-family:'Georgia','Times New Roman',serif}
+      .ss{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+    </style>
+    <linearGradient id="abg" x1="0" y1="0" x2="0" y2="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#09090f"/><stop offset="100%" stop-color="#0b0b13"/>
+    </linearGradient>
+    <linearGradient id="aoh" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#ff6a00" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#ff6a00"/>
+      <stop offset="70%"  stop-color="#ff9a3c"/>
+      <stop offset="100%" stop-color="#ff6a00" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="card-top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#ff6a00" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#ff6a00" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="720" fill="url(#abg)"/>
+  <g opacity=".02" stroke="#ff6a00" stroke-width=".5">
+    <line x1="0" y1="180" x2="900" y2="180"/>
+    <line x1="0" y1="360" x2="900" y2="360"/>
+    <line x1="0" y1="540" x2="900" y2="540"/>
+    <line x1="300" y1="0" x2="300" y2="720"/>
+    <line x1="600" y1="0" x2="600" y2="720"/>
+  </g>
+
+  <!-- Section header -->
+  <g class="f0">
+    <line x1="36"  y1="42" x2="120" y2="42" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
+    <text x="128" y="47" fill="#ff6a00" font-size="9" class="ss" letter-spacing="3" font-weight="600">EXPERTISE  &amp;  ACCOMPLISHMENTS</text>
+    <line x1="396" y1="42" x2="864" y2="42" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".1"/>
+  </g>
+
+  <!-- ===== ROW 1 ===== -->
+
+  <!-- Card: GTM Mastery -->
+  <g class="f1">
+    <rect x="36"  y="62" width="262" height="170" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".4"/>
+    <rect x="36"  y="62" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".7"/>
+    <text x="52"  y="88"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">GOOGLE TAG MANAGER</text>
+    <line x1="52" y1="96" x2="280" y2="96" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="52"  y="112" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Client-side &amp; server-side GTM</text>
+    <text x="52"  y="126" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Custom HTML tag authoring (ES5+)</text>
+    <text x="52"  y="140" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">JSON container export / import</text>
+    <text x="52"  y="154" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Tag / trigger / variable templates</text>
+    <text x="52"  y="168" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Stape data client integration</text>
+    <text x="52"  y="182" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Consent mode v2  ·  OneTrust</text>
+    <text x="52"  y="196" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Criteo  ·  Facebook Pixel  ·  Bazaarvoice</text>
+    <text x="52"  y="218" fill="#3a3a52" font-size="8" class="ss" letter-spacing="2">KUHL.COM  ·  PRODUCTION</text>
+  </g>
+
+  <!-- Card: Data & Analytics -->
+  <g class="f2">
+    <rect x="319" y="62" width="262" height="170" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".4"/>
+    <rect x="319" y="62" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".7"/>
+    <text x="335" y="88"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">DATA  &amp;  ANALYTICS</text>
+    <line x1="335" y1="96" x2="563" y2="96" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="335" y="112" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">BigQuery — table design &amp; SQL queries</text>
+    <text x="335" y="126" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">GA4 event schema &amp; parameter design</text>
+    <text x="335" y="140" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Microsoft Clarity session analysis</text>
+    <text x="335" y="154" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Conversion tracking &amp; attribution</text>
+    <text x="335" y="168" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">User identification &amp; data enrichment</text>
+    <text x="335" y="182" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">SSMS  ·  Firebase Realtime DB</text>
+    <text x="335" y="196" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Supabase  ·  PostgreSQL</text>
+    <text x="335" y="218" fill="#3a3a52" font-size="8" class="ss" letter-spacing="2">FULL DATA PIPELINE</text>
+  </g>
+
+  <!-- Card: AI & Automation -->
+  <g class="f3">
+    <rect x="602" y="62" width="262" height="170" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".8" stroke-opacity=".7"/>
+    <rect x="602" y="62" width="262" height="3"   rx="1" fill="#ff9a3c"/>
+    <text x="618" y="88"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">AI  &amp;  AUTOMATION</text>
+    <line x1="618" y1="96" x2="846" y2="96" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="618" y="112" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">MCP server creation &amp; deployment</text>
+    <text x="618" y="126" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Claude AI integration &amp; prompt engineering</text>
+    <text x="618" y="140" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Obsidian → Claude pipeline</text>
+    <text x="618" y="154" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">n8n workflow automation (complex flows)</text>
+    <text x="618" y="168" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Notion AI workspace design</text>
+    <text x="618" y="182" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">AI-assisted GTM tag generation</text>
+    <text x="618" y="196" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Graphify integration  ·  API orchestration</text>
+    <text x="618" y="218" fill="#3a3a52" font-size="8" class="ss" letter-spacing="2">CUTTING EDGE</text>
+  </g>
+
+  <!-- ===== ROW 2 ===== -->
+
+  <!-- Card: Languages -->
+  <g class="f4">
+    <rect x="36"  y="252" width="262" height="170" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".4"/>
+    <rect x="36"  y="252" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".7"/>
+    <text x="52"  y="278" fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">LANGUAGES</text>
+    <line x1="52" y1="286" x2="280" y2="286" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="52"  y="302" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">JavaScript — expert (ES5 + ES6+)</text>
+    <text x="52"  y="316" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">TypeScript — proficient</text>
+    <text x="52"  y="330" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Python — automation &amp; scripting</text>
+    <text x="52"  y="344" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Java  ·  C# — working knowledge</text>
+    <text x="52"  y="358" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">SQL — complex query authoring</text>
+    <text x="52"  y="372" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">JSON — extraction, parsing, transform</text>
+    <text x="52"  y="386" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">HTML  ·  CSS — component-level</text>
+    <text x="52"  y="408" fill="#3a3a52" font-size="8" class="ss" letter-spacing="2">POLYGLOT  ENGINEER</text>
+  </g>
+
+  <!-- Card: Frontend & Infra -->
+  <g class="f5">
+    <rect x="319" y="252" width="262" height="170" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".4"/>
+    <rect x="319" y="252" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".7"/>
+    <text x="335" y="278" fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">FRONTEND  &amp;  INFRASTRUCTURE</text>
+    <line x1="335" y1="286" x2="563" y2="286" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="335" y="302" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">React  ·  TypeScript  ·  Tailwind CSS</text>
+    <text x="335" y="316" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Strapi CMS — content modeling</text>
+    <text x="335" y="330" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Docker  ·  containerised deployments</text>
+    <text x="335" y="344" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Tailscale VPN  ·  remote workspaces</text>
+    <text x="335" y="358" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">VS Code remote dev environments</text>
+    <text x="335" y="372" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Android Studio  ·  mobile builds</text>
+    <text x="335" y="386" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Postman  ·  API testing &amp; debugging</text>
+    <text x="335" y="408" fill="#3a3a52" font-size="8" class="ss" letter-spacing="2">END  TO  END</text>
+  </g>
+
+  <!-- Card: MarTech -->
+  <g class="f6">
+    <rect x="602" y="252" width="262" height="170" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".8" stroke-opacity=".7"/>
+    <rect x="602" y="252" width="262" height="3"   rx="1" fill="#ff9a3c"/>
+    <text x="618" y="278" fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">MARTECH  ECOSYSTEM</text>
+    <line x1="618" y1="286" x2="846" y2="286" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="618" y="302" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Klaviyo — email &amp; event integration</text>
+    <text x="618" y="316" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Facebook Business Suite + Pixel</text>
+    <text x="618" y="330" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Criteo  ·  Bazaarvoice  ·  OneTrust</text>
+    <text x="618" y="344" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Consent Mode v2 initialization</text>
+    <text x="618" y="358" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">GA4 — full event schema ownership</text>
+    <text x="618" y="372" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Stape  ·  sGTM data client setup</text>
+    <text x="618" y="386" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Facebook Pixel  ·  CAPI integration</text>
+    <text x="618" y="408" fill="#3a3a52" font-size="8" class="ss" letter-spacing="2">KUHL.COM  PRODUCTION</text>
+  </g>
+
+  <!-- ===== ROW 3 ===== -->
+
+  <!-- Card: Tooling -->
+  <g class="f6">
+    <rect x="36"  y="442" width="262" height="150" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".4"/>
+    <rect x="36"  y="442" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".7"/>
+    <text x="52"  y="468" fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">TOOLING  &amp;  WORKFLOW</text>
+    <line x1="52" y1="476" x2="280" y2="476" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="52"  y="492" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Atlassian Jira — sprint &amp; issue tracking</text>
+    <text x="52"  y="506" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Linear  ·  project &amp; ticket management</text>
+    <text x="52"  y="520" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Notion — docs &amp; knowledge base</text>
+    <text x="52"  y="534" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Obsidian — second brain + automation</text>
+    <text x="52"  y="548" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Git  ·  GitHub  ·  version control</text>
+    <text x="52"  y="578" fill="#3a3a52" font-size="8" class="ss" letter-spacing="2">FULLY REMOTE  ·  ASYNC</text>
+  </g>
+
+  <!-- Card: Databases -->
+  <g class="f7">
+    <rect x="319" y="442" width="262" height="150" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".4"/>
+    <rect x="319" y="442" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".7"/>
+    <text x="335" y="468" fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">DATABASES  &amp;  BACKENDS</text>
+    <line x1="335" y1="476" x2="563" y2="476" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="335" y="492" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Firebase Realtime DB + Firestore</text>
+    <text x="335" y="506" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Supabase  ·  PostgreSQL</text>
+    <text x="335" y="520" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">SSMS  ·  Microsoft SQL Server</text>
+    <text x="335" y="534" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">BigQuery  ·  Google Cloud Platform</text>
+    <text x="335" y="548" fill="#9090a8" font-size="9" class="ss" letter-spacing=".3">Postman  ·  REST  ·  API debugging</text>
+    <text x="335" y="578" fill="#3a3a52" font-size="8" class="ss" letter-spacing="2">MULTI  PLATFORM</text>
+  </g>
+
+  <!-- Card: Highlight / about -->
+  <g class="f7">
+    <rect x="602" y="442" width="262" height="150" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".8" stroke-opacity=".7"/>
+    <rect x="602" y="442" width="262" height="3"   rx="1" fill="#ff9a3c"/>
+    <text x="618" y="468" fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">THE  EDGE</text>
+    <line x1="618" y1="476" x2="846" y2="476" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="618" y="496" fill="#c8c8dc" font-size="10" class="ss" letter-spacing=".3" font-style="italic">Remote from South Africa,</text>
+    <text x="618" y="512" fill="#c8c8dc" font-size="10" class="ss" letter-spacing=".3" font-style="italic">shipping production-grade GTM</text>
+    <text x="618" y="528" fill="#c8c8dc" font-size="10" class="ss" letter-spacing=".3" font-style="italic">and AI systems for a Utah-based</text>
+    <text x="618" y="544" fill="#c8c8dc" font-size="10" class="ss" letter-spacing=".3" font-style="italic">outdoor apparel brand — solo.</text>
+    <text x="618" y="568" fill="#ff6a00" font-size="9" class="ss" letter-spacing="1.5">SPECIALIZED  ·  TRUSTED  ·  REMOTE</text>
+    <text x="618" y="582" fill="#3a3a52" font-size="8" class="ss" letter-spacing="2">KUHL.COM</text>
+  </g>
+
+  <!-- Bottom rule -->
+  <line x1="0" y1="719" x2="900" y2="719" stroke="url(#aoh)" stroke-width=".8" stroke-opacity=".3"/>
+</svg>

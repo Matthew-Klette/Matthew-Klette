@@ -1,259 +1,211 @@
-<svg viewBox="0 0 900 140" xmlns="http://www.w3.org/2000/svg" width="900">
+<svg viewBox="0 0 900 130" xmlns="http://www.w3.org/2000/svg" width="900">
   <defs>
     <style>
-      @keyframes marquee {
-        from { transform: translateX(0); }
-        to   { transform: translateX(-1392px); }
-      }
-      .track { animation: marquee 22s linear infinite; }
-
-      @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-      .fadein { animation: fadeIn .8s ease .1s both; }
-
-      text { font-family: 'Georgia', 'Times New Roman', serif; }
-      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+      @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-1664px)}}
+      .track{animation:mq 28s linear infinite}
+      @keyframes fi{from{opacity:0}to{opacity:1}}
+      .fi{animation:fi .8s ease .1s both}
+      text{font-family:'Georgia','Times New Roman',serif}
+      .ss{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
     </style>
-
-    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="140" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#080b10"/>
-      <stop offset="100%" stop-color="#090c12"/>
+    <linearGradient id="sbg" x1="0" y1="0" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#09090f"/><stop offset="100%" stop-color="#0b0b13"/>
     </linearGradient>
-
-    <linearGradient id="fade-l3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#080b10" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#080b10" stop-opacity="0"/>
+    <linearGradient id="fl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#09090f" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#09090f" stop-opacity="0"/>
     </linearGradient>
-
-    <linearGradient id="fade-r3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#080b10" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#080b10" stop-opacity="1"/>
+    <linearGradient id="fr" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#09090f" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#09090f" stop-opacity="1"/>
     </linearGradient>
-
-    <linearGradient id="gold-h3" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#c9a96e" stop-opacity="0"/>
-      <stop offset="30%"  stop-color="#c9a96e"/>
-      <stop offset="70%"  stop-color="#e8c98a"/>
-      <stop offset="100%" stop-color="#c9a96e" stop-opacity="0"/>
+    <linearGradient id="soh" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#ff6a00" stop-opacity="0"/>
+      <stop offset="35%"  stop-color="#ff6a00"/>
+      <stop offset="65%"  stop-color="#ff9a3c"/>
+      <stop offset="100%" stop-color="#ff6a00" stop-opacity="0"/>
     </linearGradient>
-
-    <clipPath id="mq-clip">
-      <rect x="0" y="0" width="900" height="140"/>
-    </clipPath>
+    <clipPath id="sc"><rect x="0" y="0" width="900" height="130"/></clipPath>
   </defs>
 
-  <rect width="900" height="140" fill="url(#bg3)"/>
+  <rect width="900" height="130" fill="url(#sbg)"/>
+  <line x1="0" y1="1"   x2="900" y2="1"   stroke="url(#soh)" stroke-width=".8" stroke-opacity=".4"/>
+  <line x1="0" y1="129" x2="900" y2="129" stroke="url(#soh)" stroke-width=".8" stroke-opacity=".4"/>
 
-  <!-- Top + bottom rules -->
-  <line x1="0" y1="1"   x2="900" y2="1"   stroke="url(#gold-h3)" stroke-width="1" stroke-opacity=".4"/>
-  <line x1="0" y1="139" x2="900" y2="139" stroke="url(#gold-h3)" stroke-width="1" stroke-opacity=".4"/>
-
-  <!-- Section label -->
-  <g class="fadein">
-    <text x="450" y="22" text-anchor="middle" fill="#2a2e38" font-size="9" class="sans" letter-spacing="4">TECH STACK</text>
+  <g class="fi">
+    <text x="450" y="18" text-anchor="middle" fill="#2a2a3c" font-size="8" class="ss" letter-spacing="4">TECH  STACK</text>
   </g>
 
-  <g clip-path="url(#mq-clip)">
-    <g class="track fadein">
-
-      <!-- ======================== FIRST SET ======================== -->
-      <!-- Each card: width=116, gap=16, so step=132 -->
-      <!-- 12 cards × 132 = 1584 total, translateX(-1584/2) = -792... but we'll do exact duplicate -->
-      <!-- Actually: translateX to -( 12 * 132 ) = -1584, but let's do 11 cards each side -->
-      <!-- card step = 116 + 12 = 128. 11 cards = 1408px total. Duplicate at +1408 -->
+  <g clip-path="url(#sc)">
+    <g class="track fi">
+      <!-- card width=100, gap=4, step=104. 16 cards = 1664px. translateX(-1664) -->
 
       <!-- GTM -->
-      <g transform="translate(36,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e"  font-size="9"  class="sans" letter-spacing="3">GTM</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260"  font-size="8"  class="sans" letter-spacing="1.5">TAG MANAGER</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38"  font-size="7"  class="sans" letter-spacing="1">CLIENT + SERVER</text>
+      <g transform="translate(0,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">GTM</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">TAG MANAGER</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">CLIENT+SERVER</text>
       </g>
 
       <!-- BigQuery -->
-      <g transform="translate(164,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e"  font-size="9"  class="sans" letter-spacing="3">BIGQUERY</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260"  font-size="8"  class="sans" letter-spacing="1.5">DATA WAREHOUSE</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38"  font-size="7"  class="sans" letter-spacing="1">GOOGLE CLOUD</text>
+      <g transform="translate(104,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">BIGQUERY</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">DATA WAREHOUSE</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">GOOGLE CLOUD</text>
       </g>
 
       <!-- JavaScript -->
-      <g transform="translate(292,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e"  font-size="9"  class="sans" letter-spacing="3">JAVASCRIPT</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260"  font-size="8"  class="sans" letter-spacing="1.5">ES6+  /  ES5</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38"  font-size="7"  class="sans" letter-spacing="1">CUSTOM HTML TAGS</text>
+      <g transform="translate(208,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff9a3c" stroke-width=".6" stroke-opacity=".8"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">JAVASCRIPT</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">EXPERT  ·  ES6+</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">CUSTOM TAGS</text>
       </g>
 
       <!-- Python -->
-      <g transform="translate(420,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e"  font-size="9"  class="sans" letter-spacing="3">PYTHON</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260"  font-size="8"  class="sans" letter-spacing="1.5">SCRIPTING</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38"  font-size="7"  class="sans" letter-spacing="1">AUTOMATION</text>
-      </g>
-
-      <!-- SQL -->
-      <g transform="translate(548,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e"  font-size="9"  class="sans" letter-spacing="3">SQL</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260"  font-size="8"  class="sans" letter-spacing="1.5">POSTGRESQL</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38"  font-size="7"  class="sans" letter-spacing="1">DATA QUERIES</text>
+      <g transform="translate(312,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">PYTHON</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">AUTOMATION</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">SCRIPTING</text>
       </g>
 
       <!-- React -->
-      <g transform="translate(676,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e"  font-size="9"  class="sans" letter-spacing="3">REACT</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260"  font-size="8"  class="sans" letter-spacing="1.5">FRONTEND</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38"  font-size="7"  class="sans" letter-spacing="1">TYPESCRIPT</text>
-      </g>
-
-      <!-- Firebase -->
-      <g transform="translate(804,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e"  font-size="9"  class="sans" letter-spacing="3">FIREBASE</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260"  font-size="8"  class="sans" letter-spacing="1.5">REALTIME DB</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38"  font-size="7"  class="sans" letter-spacing="1">GOOGLE CLOUD</text>
-      </g>
-
-      <!-- Docker -->
-      <g transform="translate(932,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e"  font-size="9"  class="sans" letter-spacing="3">DOCKER</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260"  font-size="8"  class="sans" letter-spacing="1.5">CONTAINERS</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38"  font-size="7"  class="sans" letter-spacing="1">DEVOPS</text>
+      <g transform="translate(416,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">REACT</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">TYPESCRIPT</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">TAILWIND</text>
       </g>
 
       <!-- n8n -->
-      <g transform="translate(1060,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e"  font-size="9"  class="sans" letter-spacing="3">N8N</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260"  font-size="8"  class="sans" letter-spacing="1.5">AUTOMATION</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38"  font-size="7"  class="sans" letter-spacing="1">WORKFLOW</text>
+      <g transform="translate(520,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff9a3c" stroke-width=".6" stroke-opacity=".8"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">N8N</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">AUTOMATION</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">WORKFLOWS</text>
       </g>
 
-      <!-- AWS -->
-      <g transform="translate(1188,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e"  font-size="9"  class="sans" letter-spacing="3">AWS</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260"  font-size="8"  class="sans" letter-spacing="1.5">CLOUD</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38"  font-size="7"  class="sans" letter-spacing="1">INFRASTRUCTURE</text>
+      <!-- Firebase -->
+      <g transform="translate(624,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">FIREBASE</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">REALTIME DB</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">FIRESTORE</text>
+      </g>
+
+      <!-- Docker -->
+      <g transform="translate(728,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">DOCKER</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">CONTAINERS</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">DEVOPS</text>
+      </g>
+
+      <!-- Supabase -->
+      <g transform="translate(832,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">SUPABASE</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">POSTGRESQL</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">BACKEND</text>
       </g>
 
       <!-- Klaviyo -->
-      <g transform="translate(1316,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e"  font-size="9"  class="sans" letter-spacing="3">KLAVIYO</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260"  font-size="8"  class="sans" letter-spacing="1.5">EMAIL MARKETING</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38"  font-size="7"  class="sans" letter-spacing="1">MARTECH</text>
+      <g transform="translate(936,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">KLAVIYO</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">EMAIL MARTECH</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">EVENTS</text>
       </g>
 
-      <!-- ======================== DUPLICATE SET (offset = 11 × 128 = 1408) ======================== -->
-
-      <g transform="translate(1444,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e" font-size="9" class="sans" letter-spacing="3">GTM</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260" font-size="8" class="sans" letter-spacing="1.5">TAG MANAGER</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38" font-size="7" class="sans" letter-spacing="1">CLIENT + SERVER</text>
+      <!-- MCP -->
+      <g transform="translate(1040,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff9a3c" stroke-width=".6" stroke-opacity=".8"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">MCP</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">SERVER CREATION</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">AI TOOLING</text>
       </g>
 
-      <g transform="translate(1572,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e" font-size="9" class="sans" letter-spacing="3">BIGQUERY</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260" font-size="8" class="sans" letter-spacing="1.5">DATA WAREHOUSE</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38" font-size="7" class="sans" letter-spacing="1">GOOGLE CLOUD</text>
+      <!-- GA4 -->
+      <g transform="translate(1144,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">GA4</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">EVENTS SCHEMA</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">ANALYTICS</text>
       </g>
 
-      <g transform="translate(1700,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e" font-size="9" class="sans" letter-spacing="3">JAVASCRIPT</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260" font-size="8" class="sans" letter-spacing="1.5">ES6+  /  ES5</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38" font-size="7" class="sans" letter-spacing="1">CUSTOM HTML TAGS</text>
+      <!-- Strapi -->
+      <g transform="translate(1248,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">STRAPI</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">HEADLESS CMS</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">CONTENT MODEL</text>
       </g>
 
-      <g transform="translate(1828,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e" font-size="9" class="sans" letter-spacing="3">PYTHON</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260" font-size="8" class="sans" letter-spacing="1.5">SCRIPTING</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38" font-size="7" class="sans" letter-spacing="1">AUTOMATION</text>
+      <!-- Tailscale -->
+      <g transform="translate(1352,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">TAILSCALE</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">VPN  ·  MESH</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">REMOTE DEV</text>
       </g>
 
-      <g transform="translate(1956,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e" font-size="9" class="sans" letter-spacing="3">SQL</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260" font-size="8" class="sans" letter-spacing="1.5">POSTGRESQL</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38" font-size="7" class="sans" letter-spacing="1">DATA QUERIES</text>
+      <!-- Obsidian -->
+      <g transform="translate(1456,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">OBSIDIAN</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">KNOWLEDGE BASE</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">→ CLAUDE</text>
       </g>
 
-      <g transform="translate(2084,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e" font-size="9" class="sans" letter-spacing="3">REACT</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260" font-size="8" class="sans" letter-spacing="1.5">FRONTEND</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38" font-size="7" class="sans" letter-spacing="1">TYPESCRIPT</text>
+      <!-- Microsoft Clarity -->
+      <g transform="translate(1560,26)">
+        <rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+        <text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">CLARITY</text>
+        <line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/>
+        <text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">MS CLARITY</text>
+        <text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">SESSION DATA</text>
       </g>
 
-      <g transform="translate(2212,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e" font-size="9" class="sans" letter-spacing="3">FIREBASE</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260" font-size="8" class="sans" letter-spacing="1.5">REALTIME DB</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38" font-size="7" class="sans" letter-spacing="1">GOOGLE CLOUD</text>
-      </g>
-
-      <g transform="translate(2340,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e" font-size="9" class="sans" letter-spacing="3">DOCKER</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260" font-size="8" class="sans" letter-spacing="1.5">CONTAINERS</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38" font-size="7" class="sans" letter-spacing="1">DEVOPS</text>
-      </g>
-
-      <g transform="translate(2468,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e" font-size="9" class="sans" letter-spacing="3">N8N</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260" font-size="8" class="sans" letter-spacing="1.5">AUTOMATION</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38" font-size="7" class="sans" letter-spacing="1">WORKFLOW</text>
-      </g>
-
-      <g transform="translate(2596,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e" font-size="9" class="sans" letter-spacing="3">AWS</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260" font-size="8" class="sans" letter-spacing="1.5">CLOUD</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38" font-size="7" class="sans" letter-spacing="1">INFRASTRUCTURE</text>
-      </g>
-
-      <g transform="translate(2724,32)">
-        <rect width="112" height="76" rx="3" fill="#0b0f16" stroke="#1e2330" stroke-width="1"/>
-        <text x="56" y="28" text-anchor="middle" fill="#c9a96e" font-size="9" class="sans" letter-spacing="3">KLAVIYO</text>
-        <text x="56" y="48" text-anchor="middle" fill="#4a5260" font-size="8" class="sans" letter-spacing="1.5">EMAIL MARKETING</text>
-        <line x1="22" y1="58" x2="90" y2="58" stroke="#1e2330" stroke-width=".5"/>
-        <text x="56" y="70" text-anchor="middle" fill="#2a2e38" font-size="7" class="sans" letter-spacing="1">MARTECH</text>
-      </g>
+      <!-- === DUPLICATE SET (offset +1664) === -->
+      <g transform="translate(1664,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">GTM</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">TAG MANAGER</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">CLIENT+SERVER</text></g>
+      <g transform="translate(1768,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">BIGQUERY</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">DATA WAREHOUSE</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">GOOGLE CLOUD</text></g>
+      <g transform="translate(1872,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff9a3c" stroke-width=".6" stroke-opacity=".8"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">JAVASCRIPT</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">EXPERT  ·  ES6+</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">CUSTOM TAGS</text></g>
+      <g transform="translate(1976,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">PYTHON</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">AUTOMATION</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">SCRIPTING</text></g>
+      <g transform="translate(2080,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">REACT</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">TYPESCRIPT</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">TAILWIND</text></g>
+      <g transform="translate(2184,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff9a3c" stroke-width=".6" stroke-opacity=".8"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">N8N</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">AUTOMATION</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">WORKFLOWS</text></g>
+      <g transform="translate(2288,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">FIREBASE</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">REALTIME DB</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">FIRESTORE</text></g>
+      <g transform="translate(2392,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">DOCKER</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">CONTAINERS</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">DEVOPS</text></g>
+      <g transform="translate(2496,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">SUPABASE</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">POSTGRESQL</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">BACKEND</text></g>
+      <g transform="translate(2600,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">KLAVIYO</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">EMAIL MARTECH</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">EVENTS</text></g>
+      <g transform="translate(2704,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff9a3c" stroke-width=".6" stroke-opacity=".8"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">MCP</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">SERVER CREATION</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">AI TOOLING</text></g>
+      <g transform="translate(2808,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">GA4</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">EVENTS SCHEMA</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">ANALYTICS</text></g>
+      <g transform="translate(2912,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">STRAPI</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">HEADLESS CMS</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">CONTENT MODEL</text></g>
+      <g transform="translate(3016,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">TAILSCALE</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">VPN  ·  MESH</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">REMOTE DEV</text></g>
+      <g transform="translate(3120,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">OBSIDIAN</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">KNOWLEDGE BASE</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">→ CLAUDE</text></g>
+      <g transform="translate(3224,26)"><rect width="100" height="82" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/><text x="50" y="24" text-anchor="middle" fill="#ff9a3c" font-size="8" class="ss" letter-spacing="2" font-weight="600">CLARITY</text><line x1="14" y1="32" x2="86" y2="32" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".2"/><text x="50" y="46" text-anchor="middle" fill="#4a4a62" font-size="7" class="ss" letter-spacing="1">MS CLARITY</text><text x="50" y="60" text-anchor="middle" fill="#2e2e42" font-size="7" class="ss" letter-spacing="1">SESSION DATA</text></g>
 
     </g>
   </g>
 
   <!-- Fade masks -->
-  <rect x="0"   y="0" width="80"  height="140" fill="url(#fade-l3)"/>
-  <rect x="820" y="0" width="80"  height="140" fill="url(#fade-r3)"/>
+  <rect x="0"   y="0" width="72"  height="130" fill="url(#fl)"/>
+  <rect x="828" y="0" width="72"  height="130" fill="url(#fr)"/>
 </svg>

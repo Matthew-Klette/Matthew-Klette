@@ -21,22 +21,22 @@
   <line x1="0" y1="1" x2="900" y2="1" stroke="url(#coh)" stroke-width=".8" stroke-opacity=".35"/>
 
   <g class="f0">
-    <line x1="36" y1="30" x2="108" y2="30" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".4"/>
+    <line x1="36" y1="30" x2="108" y2="30" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
     <text x="116" y="35" fill="#ff6a00" font-size="8" letter-spacing="3" font-weight="600">CONNECT</text>
-    <line x1="192" y1="30" x2="864" y2="30" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".08"/>
+    <line x1="192" y1="30" x2="864" y2="30" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".1"/>
   </g>
 
   <g class="f1">
     <rect x="196" y="46" width="160" height="30" rx="2" fill="#0d0d17" stroke="#1e1e2e" stroke-width="1"/>
-    <text x="276" y="58" text-anchor="middle" fill="#3a3a52" font-size="7" letter-spacing="2">LINKEDIN</text>
+    <text x="276" y="58" text-anchor="middle" fill="#c8c8dc" font-size="7" letter-spacing="2">LINKEDIN</text>
     <text x="276" y="70" text-anchor="middle" fill="#ff9a3c" font-size="9" letter-spacing=".5">matthew-klette</text>
 
     <rect x="370" y="46" width="160" height="30" rx="2" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
-    <text x="450" y="58" text-anchor="middle" fill="#3a3a52" font-size="7" letter-spacing="2">GITHUB</text>
+    <text x="450" y="58" text-anchor="middle" fill="#c8c8dc" font-size="7" letter-spacing="2">GITHUB</text>
     <text x="450" y="70" text-anchor="middle" fill="#ff9a3c" font-size="9" letter-spacing=".5">Matthew-Klette</text>
 
     <rect x="544" y="46" width="160" height="30" rx="2" fill="#0d0d17" stroke="#1e1e2e" stroke-width="1"/>
-    <text x="624" y="58" text-anchor="middle" fill="#3a3a52" font-size="7" letter-spacing="2">COMPANY</text>
+    <text x="624" y="58" text-anchor="middle" fill="#c8c8dc" font-size="7" letter-spacing="2">COMPANY</text>
     <text x="624" y="70" text-anchor="middle" fill="#ff9a3c" font-size="9" letter-spacing=".5">KUHL.COM</text>
   </g>
 

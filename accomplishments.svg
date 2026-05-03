@@ -80,6 +80,7 @@
     <text x="478" y="170" fill="#c8c8dc" font-size="9.5" class="ss">Conversion tracking &amp; multi-touch attribution</text>
     <text x="478" y="187" fill="#c8c8dc" font-size="9.5" class="ss">User identification &amp; data enrichment pipelines</text>
     <text x="478" y="204" fill="#c8c8dc" font-size="9.5" class="ss">SSMS  ·  Firebase  ·  Supabase  ·  PostgreSQL</text>
+    <text x="478" y="221" fill="#c8c8dc" font-size="9.5" class="ss">Looker Studio — BigQuery dashboards &amp; reporting</text>
     <text x="478" y="237" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">FULL DATA PIPELINE</text>
   </g>
 

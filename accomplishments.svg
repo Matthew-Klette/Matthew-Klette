@@ -1,4 +1,4 @@
-<svg viewBox="0 0 900 960" xmlns="http://www.w3.org/2000/svg" width="900"> 
+<svg viewBox="0 0 900 1430" xmlns="http://www.w3.org/2000/svg" width="900">
   <defs>
     <style>
       @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
@@ -11,11 +11,12 @@
       .f6{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .42s both}
       .f7{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .49s both}
       .f8{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .56s both}
-      .f9{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .63s both} 
+      .f9{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .63s both}
+      .f10{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .70s both}
       text{font-family:'Georgia','Times New Roman',serif}
       .ss{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
     </style>
-    <linearGradient id="abg" x1="0" y1="0" x2="0" y2="960" gradientUnits="userSpaceOnUse">
+    <linearGradient id="abg" x1="0" y1="0" x2="0" y2="1430" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#09090f"/><stop offset="100%" stop-color="#0b0b13"/>
     </linearGradient>
     <linearGradient id="aoh" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
@@ -24,36 +25,36 @@
       <stop offset="70%"  stop-color="#ff9a3c"/>
       <stop offset="100%" stop-color="#ff6a00" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="edge-fill" x1="0" y1="0" x2="828" y2="130" gradientUnits="userSpaceOnUse">
+    <linearGradient id="edge-fill" x1="0" y1="0" x2="828" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%"   stop-color="#130d04"/>
       <stop offset="100%" stop-color="#0e0908"/>
     </linearGradient>
+    <linearGradient id="ac-fill" x1="0" y1="0" x2="828" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#060a13"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
   </defs>
 
-  <rect width="900" height="960" fill="url(#abg)"/>
-
-  <!-- Subtle grid -->
+  <rect width="900" height="1430" fill="url(#abg)"/>
   <g opacity=".02" stroke="#ff6a00" stroke-width=".5">
-    <line x1="450" y1="0" x2="450" y2="960"/>
-    <line x1="0" y1="240" x2="900" y2="240"/>
-    <line x1="0" y1="480" x2="900" y2="480"/>
-    <line x1="0" y1="700" x2="900" y2="700"/>
+    <line x1="450" y1="0"   x2="450" y2="1430"/>
+    <line x1="0"   y1="270" x2="900" y2="270"/>
+    <line x1="0"   y1="510" x2="900" y2="510"/>
+    <line x1="0"   y1="720" x2="900" y2="720"/>
+    <line x1="0"   y1="930" x2="900" y2="930"/>
   </g>
 
-  <!-- Section header -->
+  <!-- ── Section header ── -->
   <g class="f0">
     <line x1="36"  y1="42" x2="120" y2="42" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".6"/>
     <text x="128" y="47" fill="#ff6a00" font-size="9" class="ss" letter-spacing="3" font-weight="600">EXPERTISE  &amp;  ACCOMPLISHMENTS</text>
     <line x1="396" y1="42" x2="864" y2="42" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".12"/>
   </g>
 
-  <!-- ============================================================
-       ROW 1 — GTM  |  Data & Analytics
-       card x=36, width=402 | card x=462, width=402
-       gap between = 24px. total = 36+402+24+402+36 = 900 ✓
-  ============================================================ -->
+  <!-- ══════════════════════════════════════════════════════════
+       ROW 1 — GTM  |  Data & Analytics       card h=185
+  ══════════════════════════════════════════════════════════ -->
 
-  <!-- GTM -->
   <g class="f1">
     <rect x="36"  y="62" width="402" height="185" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
     <rect x="36"  y="62" width="402" height="3"   rx="1" fill="#ff6a00" opacity=".8"/>
@@ -68,7 +69,6 @@
     <text x="52"  y="237" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">KUHL.COM  ·  PRODUCTION</text>
   </g>
 
-  <!-- Data & Analytics -->
   <g class="f2">
     <rect x="462" y="62" width="402" height="185" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
     <rect x="462" y="62" width="402" height="3"   rx="1" fill="#ff6a00" opacity=".8"/>
@@ -83,13 +83,13 @@
     <text x="478" y="237" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">FULL DATA PIPELINE</text>
   </g>
 
-  <!-- ============================================================
-       ROW 2 — AI & Automation  |  Languages
-  ============================================================ -->
+  <!-- ══════════════════════════════════════════════════════════
+       ROW 2 — AI & Automation  |  Languages     card h=220
+       Expanded to fit 9 language lines
+  ══════════════════════════════════════════════════════════ -->
 
-  <!-- AI & Automation (featured — brighter border) -->
   <g class="f3">
-    <rect x="36"  y="267" width="402" height="185" rx="3" fill="#0d0d17" stroke="#ff9a3c" stroke-width=".8" stroke-opacity=".75"/>
+    <rect x="36"  y="267" width="402" height="220" rx="3" fill="#0d0d17" stroke="#ff9a3c" stroke-width=".8" stroke-opacity=".75"/>
     <rect x="36"  y="267" width="402" height="3"   rx="1" fill="#ff9a3c"/>
     <text x="52"  y="295"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">AI  &amp;  AUTOMATION</text>
     <line x1="52" y1="305" x2="420" y2="305" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".35"/>
@@ -99,109 +99,232 @@
     <text x="52"  y="375" fill="#c8c8dc" font-size="9.5" class="ss">n8n complex workflow automation</text>
     <text x="52"  y="392" fill="#c8c8dc" font-size="9.5" class="ss">Notion AI workspace &amp; system design</text>
     <text x="52"  y="409" fill="#c8c8dc" font-size="9.5" class="ss">Graphify integration  ·  API orchestration</text>
-    <text x="52"  y="442" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">CUTTING EDGE</text>
+    <text x="52"  y="470" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">CUTTING EDGE</text>
   </g>
 
-  <!-- Languages -->
   <g class="f4">
-    <rect x="462" y="267" width="402" height="185" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
+    <rect x="462" y="267" width="402" height="220" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
     <rect x="462" y="267" width="402" height="3"   rx="1" fill="#ff6a00" opacity=".8"/>
     <text x="478" y="295"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">LANGUAGES</text>
     <line x1="478" y1="305" x2="846" y2="305" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".35"/>
     <text x="478" y="324" fill="#c8c8dc" font-size="9.5" class="ss">JavaScript — expert level (ES5 + ES6+)</text>
     <text x="478" y="341" fill="#c8c8dc" font-size="9.5" class="ss">TypeScript — proficient, production use</text>
     <text x="478" y="358" fill="#c8c8dc" font-size="9.5" class="ss">Python — automation, scripting, tooling</text>
-    <text x="478" y="375" fill="#c8c8dc" font-size="9.5" class="ss">Java  ·  C# — working knowledge</text>
-    <text x="478" y="392" fill="#c8c8dc" font-size="9.5" class="ss">SQL — complex queries &amp; BigQuery</text>
-    <text x="478" y="409" fill="#c8c8dc" font-size="9.5" class="ss">JSON — extraction, parsing, transform</text>
-    <text x="478" y="442" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">POLYGLOT  ENGINEER</text>
+    <text x="478" y="375" fill="#c8c8dc" font-size="9.5" class="ss">Kotlin — Android &amp; React Native development</text>
+    <text x="478" y="392" fill="#c8c8dc" font-size="9.5" class="ss">Java  ·  C# — working knowledge</text>
+    <text x="478" y="409" fill="#c8c8dc" font-size="9.5" class="ss">CSS  ·  HTML — component-level, responsive</text>
+    <text x="478" y="426" fill="#c8c8dc" font-size="9.5" class="ss">SQL — complex queries &amp; BigQuery</text>
+    <text x="478" y="443" fill="#c8c8dc" font-size="9.5" class="ss">JSON — extraction, parsing, transform</text>
+    <text x="478" y="470" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">POLYGLOT  ENGINEER</text>
   </g>
 
-  <!-- ============================================================
-       ROW 3 — Frontend & Infra  |  MarTech
-  ============================================================ -->
+  <!-- ══════════════════════════════════════════════════════════
+       ROW 3 — Frontend & Infra  |  MarTech      card h=220
+  ══════════════════════════════════════════════════════════ -->
 
-  <!-- Frontend & Infra -->
   <g class="f5">
-    <rect x="36"  y="472" width="402" height="185" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
-    <rect x="36"  y="472" width="402" height="3"   rx="1" fill="#ff6a00" opacity=".8"/>
-    <text x="52"  y="500"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">FRONTEND  &amp;  INFRASTRUCTURE</text>
-    <line x1="52" y1="510" x2="420" y2="510" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".35"/>
-    <text x="52"  y="529" fill="#c8c8dc" font-size="9.5" class="ss">React  ·  TypeScript  ·  Tailwind CSS</text>
-    <text x="52"  y="546" fill="#c8c8dc" font-size="9.5" class="ss">Strapi CMS — headless content modeling</text>
-    <text x="52"  y="563" fill="#c8c8dc" font-size="9.5" class="ss">Docker — containerised deployments</text>
-    <text x="52"  y="580" fill="#c8c8dc" font-size="9.5" class="ss">Tailscale VPN  ·  mesh network remote dev</text>
-    <text x="52"  y="597" fill="#c8c8dc" font-size="9.5" class="ss">VS Code remote dev environments</text>
-    <text x="52"  y="614" fill="#c8c8dc" font-size="9.5" class="ss">Android Studio  ·  Postman  ·  API testing</text>
-    <text x="52"  y="647" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">END  TO  END</text>
+    <rect x="36"  y="507" width="402" height="220" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
+    <rect x="36"  y="507" width="402" height="3"   rx="1" fill="#ff6a00" opacity=".8"/>
+    <text x="52"  y="535"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">FRONTEND  &amp;  INFRASTRUCTURE</text>
+    <line x1="52" y1="545" x2="420" y2="545" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".35"/>
+    <text x="52"  y="564" fill="#c8c8dc" font-size="9.5" class="ss">React  ·  React Native  ·  TypeScript</text>
+    <text x="52"  y="581" fill="#c8c8dc" font-size="9.5" class="ss">CSS  ·  Tailwind CSS  ·  responsive design</text>
+    <text x="52"  y="598" fill="#c8c8dc" font-size="9.5" class="ss">Strapi CMS — headless content modeling</text>
+    <text x="52"  y="615" fill="#c8c8dc" font-size="9.5" class="ss">Docker — containerised deployments</text>
+    <text x="52"  y="632" fill="#c8c8dc" font-size="9.5" class="ss">Tailscale VPN  ·  mesh network remote dev</text>
+    <text x="52"  y="649" fill="#c8c8dc" font-size="9.5" class="ss">VS Code remote dev environments</text>
+    <text x="52"  y="666" fill="#c8c8dc" font-size="9.5" class="ss">Android Studio  ·  Postman  ·  API testing</text>
+    <text x="52"  y="710" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">END  TO  END</text>
   </g>
 
-  <!-- MarTech (featured) -->
   <g class="f6">
-    <rect x="462" y="472" width="402" height="185" rx="3" fill="#0d0d17" stroke="#ff9a3c" stroke-width=".8" stroke-opacity=".75"/>
-    <rect x="462" y="472" width="402" height="3"   rx="1" fill="#ff9a3c"/>
-    <text x="478" y="500"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">MARTECH  ECOSYSTEM</text>
-    <line x1="478" y1="510" x2="846" y2="510" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".35"/>
-    <text x="478" y="529" fill="#c8c8dc" font-size="9.5" class="ss">Klaviyo — email &amp; event integration</text>
-    <text x="478" y="546" fill="#c8c8dc" font-size="9.5" class="ss">Facebook Business Suite + Pixel + CAPI</text>
-    <text x="478" y="563" fill="#c8c8dc" font-size="9.5" class="ss">Criteo  ·  Bazaarvoice  ·  OneTrust</text>
-    <text x="478" y="580" fill="#c8c8dc" font-size="9.5" class="ss">Consent Mode v2 initialization &amp; templates</text>
-    <text x="478" y="597" fill="#c8c8dc" font-size="9.5" class="ss">GA4 — full schema ownership &amp; validation</text>
-    <text x="478" y="614" fill="#c8c8dc" font-size="9.5" class="ss">Stape  ·  sGTM data client setup &amp; routing</text>
-    <text x="478" y="647" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">KUHL.COM  PRODUCTION</text>
+    <rect x="462" y="507" width="402" height="220" rx="3" fill="#0d0d17" stroke="#ff9a3c" stroke-width=".8" stroke-opacity=".75"/>
+    <rect x="462" y="507" width="402" height="3"   rx="1" fill="#ff9a3c"/>
+    <text x="478" y="535"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">MARTECH  ECOSYSTEM</text>
+    <line x1="478" y1="545" x2="846" y2="545" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".35"/>
+    <text x="478" y="564" fill="#c8c8dc" font-size="9.5" class="ss">Klaviyo — email &amp; event integration</text>
+    <text x="478" y="581" fill="#c8c8dc" font-size="9.5" class="ss">Facebook Business Suite + Pixel + CAPI</text>
+    <text x="478" y="598" fill="#c8c8dc" font-size="9.5" class="ss">Criteo  ·  Bazaarvoice  ·  OneTrust</text>
+    <text x="478" y="615" fill="#c8c8dc" font-size="9.5" class="ss">Consent Mode v2 initialization &amp; templates</text>
+    <text x="478" y="632" fill="#c8c8dc" font-size="9.5" class="ss">GA4 — full schema ownership &amp; validation</text>
+    <text x="478" y="649" fill="#c8c8dc" font-size="9.5" class="ss">Stape  ·  sGTM data client setup &amp; routing</text>
+    <text x="478" y="710" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">KUHL.COM  PRODUCTION</text>
   </g>
 
-  <!-- ============================================================
-       ROW 4 — Tooling  |  Databases
-  ============================================================ -->
+  <!-- ══════════════════════════════════════════════════════════
+       ROW 4 — Tooling  |  Databases            card h=180
+  ══════════════════════════════════════════════════════════ -->
 
-  <!-- Tooling -->
   <g class="f7">
-    <rect x="36"  y="677" width="402" height="165" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
-    <rect x="36"  y="677" width="402" height="3"   rx="1" fill="#ff6a00" opacity=".8"/>
-    <text x="52"  y="705"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">TOOLING  &amp;  WORKFLOW</text>
-    <line x1="52" y1="715" x2="420" y2="715" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".35"/>
-    <text x="52"  y="734" fill="#c8c8dc" font-size="9.5" class="ss">Atlassian Jira — sprint &amp; issue tracking</text>
-    <text x="52"  y="751" fill="#c8c8dc" font-size="9.5" class="ss">Linear — project &amp; ticket management</text>
-    <text x="52"  y="768" fill="#c8c8dc" font-size="9.5" class="ss">Notion — docs, SOPs &amp; knowledge base</text>
-    <text x="52"  y="785" fill="#c8c8dc" font-size="9.5" class="ss">Obsidian — second brain + Claude pipeline</text>
-    <text x="52"  y="802" fill="#c8c8dc" font-size="9.5" class="ss">Git  ·  GitHub  ·  version control</text>
-    <text x="52"  y="830" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">FULLY REMOTE  ·  ASYNC</text>
+    <rect x="36"  y="747" width="402" height="165" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
+    <rect x="36"  y="747" width="402" height="3"   rx="1" fill="#ff6a00" opacity=".8"/>
+    <text x="52"  y="775"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">TOOLING  &amp;  WORKFLOW</text>
+    <line x1="52" y1="785" x2="420" y2="785" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".35"/>
+    <text x="52"  y="804" fill="#c8c8dc" font-size="9.5" class="ss">Atlassian Jira — sprint &amp; issue tracking</text>
+    <text x="52"  y="821" fill="#c8c8dc" font-size="9.5" class="ss">Linear — project &amp; ticket management</text>
+    <text x="52"  y="838" fill="#c8c8dc" font-size="9.5" class="ss">Notion — docs, SOPs &amp; knowledge base</text>
+    <text x="52"  y="855" fill="#c8c8dc" font-size="9.5" class="ss">Obsidian — second brain + Claude pipeline</text>
+    <text x="52"  y="872" fill="#c8c8dc" font-size="9.5" class="ss">Git  ·  GitHub  ·  version control</text>
+    <text x="52"  y="900" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">FULLY REMOTE  ·  ASYNC</text>
   </g>
 
-  <!-- Databases -->
   <g class="f7">
-    <rect x="462" y="677" width="402" height="165" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
-    <rect x="462" y="677" width="402" height="3"   rx="1" fill="#ff6a00" opacity=".8"/>
-    <text x="478" y="705"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">DATABASES  &amp;  BACKENDS</text>
-    <line x1="478" y1="715" x2="846" y2="715" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".35"/>
-    <text x="478" y="734" fill="#c8c8dc" font-size="9.5" class="ss">Firebase Realtime DB  ·  Firestore</text>
-    <text x="478" y="751" fill="#c8c8dc" font-size="9.5" class="ss">Supabase  ·  PostgreSQL</text>
-    <text x="478" y="768" fill="#c8c8dc" font-size="9.5" class="ss">SSMS  ·  Microsoft SQL Server</text>
-    <text x="478" y="785" fill="#c8c8dc" font-size="9.5" class="ss">BigQuery  ·  Google Cloud Platform</text>
-    <text x="478" y="802" fill="#c8c8dc" font-size="9.5" class="ss">Postman  ·  REST API design &amp; debugging</text>
-    <text x="478" y="830" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">MULTI  PLATFORM</text>
+    <rect x="462" y="747" width="402" height="165" rx="3" fill="#0d0d17" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
+    <rect x="462" y="747" width="402" height="3"   rx="1" fill="#ff6a00" opacity=".8"/>
+    <text x="478" y="775"  fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">DATABASES  &amp;  BACKENDS</text>
+    <line x1="478" y1="785" x2="846" y2="785" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".35"/>
+    <text x="478" y="804" fill="#c8c8dc" font-size="9.5" class="ss">Firebase Realtime DB  ·  Firestore</text>
+    <text x="478" y="821" fill="#c8c8dc" font-size="9.5" class="ss">Supabase  ·  PostgreSQL</text>
+    <text x="478" y="838" fill="#c8c8dc" font-size="9.5" class="ss">SSMS  ·  Microsoft SQL Server</text>
+    <text x="478" y="855" fill="#c8c8dc" font-size="9.5" class="ss">BigQuery  ·  Google Cloud Platform</text>
+    <text x="478" y="872" fill="#c8c8dc" font-size="9.5" class="ss">Postman  ·  REST API design &amp; debugging</text>
+    <text x="478" y="900" fill="#ff6a00" font-size="8"   class="ss" letter-spacing="2" opacity=".55">MULTI  PLATFORM</text>
   </g>
 
-  <!-- ============================================================
-       ROW 5 — THE EDGE (full width = 36 + 828 + 36 = 900)
-  ============================================================ -->
+  <!-- ══════════════════════════════════════════════════════════
+       ROW 5 — THE EDGE  (full width 828)
+  ══════════════════════════════════════════════════════════ -->
+
+  <g class="f8">
+    <rect x="36" y="932" width="828" height="72" rx="3" fill="url(#edge-fill)" stroke="#ff9a3c" stroke-width=".8" stroke-opacity=".65"/>
+    <rect x="36" y="932" width="828" height="3"  rx="1" fill="#ff9a3c" opacity=".9"/>
+    <text x="52"  y="958" fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">THE  EDGE</text>
+    <text x="52"  y="978" fill="#c8c8dc" font-size="9.5" class="ss">Remote from South Africa · shipping production GTM &amp; AI systems for a Utah outdoor brand · solo.</text>
+    <text x="848" y="958" text-anchor="end" fill="#ff6a00" font-size="8" class="ss" letter-spacing="2" opacity=".55">SPECIALIZED</text>
+    <text x="848" y="974" text-anchor="end" fill="#ff6a00" font-size="8" class="ss" letter-spacing="2" opacity=".55">TRUSTED</text>
+    <text x="848" y="990" text-anchor="end" fill="#ff6a00" font-size="8" class="ss" letter-spacing="2" opacity=".55">KUHL.COM</text>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════════
+       ROW 6 — ACADEMIC FOUNDATION  (9 skill-cluster cards, 3×3 grid)
+  ══════════════════════════════════════════════════════════ -->
 
   <g class="f9">
-    <!-- Full-width card: x=36, width=828 matches 402+24+402 -->
-    <rect x="36" y="862" width="828" height="72" rx="3" fill="url(#edge-fill)" stroke="#ff9a3c" stroke-width=".8" stroke-opacity=".65"/>
-    <rect x="36" y="862" width="828" height="3"  rx="1" fill="#ff9a3c" opacity=".9"/>
+    <line x1="36"  y1="1040" x2="120" y2="1040" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".5"/>
+    <text x="128" y="1045" fill="#ff6a00" font-size="9" class="ss" letter-spacing="3" font-weight="600">ACADEMIC  FOUNDATION  ·  NMU  BCA</text>
+    <line x1="406" y1="1040" x2="864" y2="1040" stroke="#ff6a00" stroke-width=".5" stroke-opacity=".1"/>
+  </g>
 
-    <!-- Left content -->
-    <text x="52"  y="888" fill="#ff9a3c" font-size="11" class="ss" letter-spacing="2" font-weight="600">THE  EDGE</text>
-    <text x="52"  y="910" fill="#c8c8dc" font-size="9.5" class="ss">Remote from South Africa · shipping production GTM &amp; AI systems for a Utah outdoor brand · solo.</text>
+  <!--
+    3 columns: x = 36, 306, 576   width = 262 each   gap = 8
+    Row A y=1056  Row B y=1176  Row C y=1296
+    card height = 112
+  -->
 
-    <!-- Right label -->
-    <text x="848" y="888" text-anchor="end" fill="#ff6a00" font-size="8" class="ss" letter-spacing="2" opacity=".55">SPECIALIZED</text>
-    <text x="848" y="904" text-anchor="end" fill="#ff6a00" font-size="8" class="ss" letter-spacing="2" opacity=".55">TRUSTED</text>
-    <text x="848" y="920" text-anchor="end" fill="#ff6a00" font-size="8" class="ss" letter-spacing="2" opacity=".55">KUHL.COM</text>
+  <!-- ── ROW A ── -->
+
+  <!-- Programming Foundations -->
+  <g class="f10">
+    <rect x="36"  y="1056" width="262" height="112" rx="3" fill="url(#ac-fill)" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+    <rect x="36"  y="1056" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".6"/>
+    <text x="52"  y="1077" fill="#ff9a3c" font-size="9.5" class="ss" letter-spacing="1.5" font-weight="600">PROGRAMMING  FOUNDATIONS</text>
+    <line x1="52" y1="1085" x2="280" y2="1085" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="52"  y="1101" fill="#c8c8dc" font-size="8.5" class="ss">OOP in Java &amp; C# · algorithms · data</text>
+    <text x="52"  y="1115" fill="#c8c8dc" font-size="8.5" class="ss">structures · design patterns · software SDLC</text>
+    <text x="52"  y="1133" fill="#9090a8" font-size="7.5" class="ss" letter-spacing=".5">Visual Studio  ·  IntelliJ  ·  Git  ·  GitHub</text>
+    <text x="52"  y="1158" fill="#9090a8" font-size="7" class="ss" letter-spacing="1.5">IPRG  ·  PRLD  ·  PROG 1A/1B/2A</text>
+  </g>
+
+  <!-- Web & UI/UX Development -->
+  <g class="f10">
+    <rect x="306" y="1056" width="262" height="112" rx="3" fill="url(#ac-fill)" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+    <rect x="306" y="1056" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".6"/>
+    <text x="322" y="1077" fill="#ff9a3c" font-size="9.5" class="ss" letter-spacing="1.5" font-weight="600">WEB  &amp;  UI / UX  DEVELOPMENT</text>
+    <line x1="322" y1="1085" x2="550" y2="1085" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="322" y="1101" fill="#c8c8dc" font-size="8.5" class="ss">HTML · CSS · JavaScript · responsive design</text>
+    <text x="322" y="1115" fill="#c8c8dc" font-size="8.5" class="ss">wireframing · prototyping · accessibility</text>
+    <text x="322" y="1133" fill="#9090a8" font-size="7.5" class="ss" letter-spacing=".5">Figma  ·  Adobe XD  ·  Browser DevTools</text>
+    <text x="322" y="1158" fill="#9090a8" font-size="7" class="ss" letter-spacing="1.5">WEDE  ·  PIXD</text>
+  </g>
+
+  <!-- Mobile Application Development -->
+  <g class="f10">
+    <rect x="576" y="1056" width="262" height="112" rx="3" fill="url(#ac-fill)" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+    <rect x="576" y="1056" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".6"/>
+    <text x="592" y="1077" fill="#ff9a3c" font-size="9.5" class="ss" letter-spacing="1.5" font-weight="600">MOBILE  APP  DEVELOPMENT</text>
+    <line x1="592" y1="1085" x2="820" y2="1085" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="592" y="1101" fill="#c8c8dc" font-size="8.5" class="ss">Native Android · Kotlin · app lifecycle</text>
+    <text x="592" y="1115" fill="#c8c8dc" font-size="8.5" class="ss">UI components · REST APIs · mobile scripting</text>
+    <text x="592" y="1133" fill="#9090a8" font-size="7.5" class="ss" letter-spacing=".5">Android Studio  ·  Kotlin  ·  Gradle  ·  ADB</text>
+    <text x="592" y="1158" fill="#9090a8" font-size="7" class="ss" letter-spacing="1.5">IMAD  ·  MAST</text>
+  </g>
+
+  <!-- ── ROW B ── -->
+
+  <!-- Network Engineering -->
+  <g class="f10">
+    <rect x="36"  y="1180" width="262" height="112" rx="3" fill="url(#ac-fill)" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+    <rect x="36"  y="1180" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".6"/>
+    <text x="52"  y="1201" fill="#ff9a3c" font-size="9.5" class="ss" letter-spacing="1.5" font-weight="600">NETWORK  ENGINEERING</text>
+    <line x1="52" y1="1209" x2="280" y2="1209" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="52"  y="1225" fill="#c8c8dc" font-size="8.5" class="ss">TCP/IP · OSI model · LAN/WAN design</text>
+    <text x="52"  y="1239" fill="#c8c8dc" font-size="8.5" class="ss">routing · switching · subnetting · DNS/DHCP</text>
+    <text x="52"  y="1257" fill="#9090a8" font-size="7.5" class="ss" letter-spacing=".5">Cisco Packet Tracer  ·  Wireshark</text>
+    <text x="52"  y="1282" fill="#9090a8" font-size="7" class="ss" letter-spacing="1.5">NWEG  1A  ·  1B</text>
+  </g>
+
+  <!-- Information Systems -->
+  <g class="f10">
+    <rect x="306" y="1180" width="262" height="112" rx="3" fill="url(#ac-fill)" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+    <rect x="306" y="1180" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".6"/>
+    <text x="322" y="1201" fill="#ff9a3c" font-size="9.5" class="ss" letter-spacing="1.5" font-weight="600">INFORMATION  SYSTEMS</text>
+    <line x1="322" y1="1209" x2="550" y2="1209" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="322" y="1225" fill="#c8c8dc" font-size="8.5" class="ss">Systems analysis · SDLC · data modelling</text>
+    <text x="322" y="1239" fill="#c8c8dc" font-size="8.5" class="ss">business process design · IT governance</text>
+    <text x="322" y="1257" fill="#9090a8" font-size="7.5" class="ss" letter-spacing=".5">draw.io  ·  Lucidchart  ·  ERD modelling</text>
+    <text x="322" y="1282" fill="#9090a8" font-size="7" class="ss" letter-spacing="1.5">INSY  1B  ·  2A</text>
+  </g>
+
+  <!-- Cloud Development -->
+  <g class="f10">
+    <rect x="576" y="1180" width="262" height="112" rx="3" fill="url(#ac-fill)" stroke="#ff9a3c" stroke-width=".6" stroke-opacity=".7"/>
+    <rect x="576" y="1180" width="262" height="3"   rx="1" fill="#ff9a3c" opacity=".9"/>
+    <text x="592" y="1201" fill="#ff9a3c" font-size="9.5" class="ss" letter-spacing="1.5" font-weight="600">CLOUD  DEVELOPMENT</text>
+    <line x1="592" y1="1209" x2="820" y2="1209" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="592" y="1225" fill="#c8c8dc" font-size="8.5" class="ss">Azure services · IaaS/PaaS/SaaS · serverless</text>
+    <text x="592" y="1239" fill="#c8c8dc" font-size="8.5" class="ss">cloud-native deployment · CI/CD pipelines</text>
+    <text x="592" y="1257" fill="#9090a8" font-size="7.5" class="ss" letter-spacing=".5">Microsoft Azure  ·  Azure Portal  ·  MS Learn</text>
+    <text x="592" y="1282" fill="#9090a8" font-size="7" class="ss" letter-spacing="1.5">CLDV  6211</text>
+  </g>
+
+  <!-- ── ROW C ── -->
+
+  <!-- Security Principles -->
+  <g class="f10">
+    <rect x="36"  y="1304" width="262" height="112" rx="3" fill="url(#ac-fill)" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+    <rect x="36"  y="1304" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".6"/>
+    <text x="52"  y="1325" fill="#ff9a3c" font-size="9.5" class="ss" letter-spacing="1.5" font-weight="600">SECURITY  PRINCIPLES</text>
+    <line x1="52" y1="1333" x2="280" y2="1333" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="52"  y="1349" fill="#c8c8dc" font-size="8.5" class="ss">Cybersecurity fundamentals · threat modelling</text>
+    <text x="52"  y="1363" fill="#c8c8dc" font-size="8.5" class="ss">access control · encryption · risk assessment</text>
+    <text x="52"  y="1381" fill="#9090a8" font-size="7.5" class="ss" letter-spacing=".5">Wireshark  ·  Nmap  ·  Kali Linux  ·  Nessus</text>
+    <text x="52"  y="1406" fill="#9090a8" font-size="7" class="ss" letter-spacing="1.5">PRSE  6212</text>
+  </g>
+
+  <!-- Computational Mathematics -->
+  <g class="f10">
+    <rect x="306" y="1304" width="262" height="112" rx="3" fill="url(#ac-fill)" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+    <rect x="306" y="1304" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".6"/>
+    <text x="322" y="1325" fill="#ff9a3c" font-size="9.5" class="ss" letter-spacing="1.5" font-weight="600">COMPUTATIONAL  MATHEMATICS</text>
+    <line x1="322" y1="1333" x2="550" y2="1333" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="322" y="1349" fill="#c8c8dc" font-size="8.5" class="ss">Discrete maths · boolean logic · set theory</text>
+    <text x="322" y="1363" fill="#c8c8dc" font-size="8.5" class="ss">statistics · quantitative reasoning for CS</text>
+    <text x="322" y="1381" fill="#9090a8" font-size="7.5" class="ss" letter-spacing=".5">MATLAB basics  ·  GeoGebra  ·  Excel</text>
+    <text x="322" y="1406" fill="#9090a8" font-size="7" class="ss" letter-spacing="1.5">MAPC  ·  IQTT</text>
+  </g>
+
+  <!-- Professional Practice & WIL -->
+  <g class="f10">
+    <rect x="576" y="1304" width="262" height="112" rx="3" fill="url(#ac-fill)" stroke="#ff6a00" stroke-width=".4" stroke-opacity=".4"/>
+    <rect x="576" y="1304" width="262" height="3"   rx="1" fill="#ff6a00" opacity=".6"/>
+    <text x="592" y="1325" fill="#ff9a3c" font-size="9.5" class="ss" letter-spacing="1.5" font-weight="600">PROFESSIONAL  PRACTICE</text>
+    <line x1="592" y1="1333" x2="820" y2="1333" stroke="#ff6a00" stroke-width=".3" stroke-opacity=".25"/>
+    <text x="592" y="1349" fill="#c8c8dc" font-size="8.5" class="ss">IT ethics · professional communication</text>
+    <text x="592" y="1363" fill="#c8c8dc" font-size="8.5" class="ss">workplace integration · digital literacy · WIL</text>
+    <text x="592" y="1381" fill="#9090a8" font-size="7.5" class="ss" letter-spacing=".5">Microsoft 365  ·  Teams  ·  SharePoint</text>
+    <text x="592" y="1406" fill="#9090a8" font-size="7" class="ss" letter-spacing="1.5">ITPP  ·  DIAL  ·  XHAW</text>
   </g>
 
   <!-- Bottom rule -->
-  <line x1="0" y1="959" x2="900" y2="959" stroke="url(#aoh)" stroke-width=".8" stroke-opacity=".3"/>
+  <line x1="0" y1="1425" x2="900" y2="1425" stroke="url(#aoh)" stroke-width=".8" stroke-opacity=".3"/>
 </svg>

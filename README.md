@@ -13,6 +13,10 @@
 <b>Nishiki</b> <a href="https://nishiki.vercel.app">live</a> · <a href="https://github.com/Matthew-Klette/nishiki">code</a>
 </sub></p>
 
+<p align="center"><sub>
+<b>Open source</b> · <a href="https://github.com/Seagey/couch-tv/pull/128">couch-tv</a>: first working Hisense VIDAA support on real hardware (modern-firmware mTLS/MQTT auth, PIN pairing, native app tile) + a <a href="https://github.com/Seagey/couch-tv/pull/141">no-computer standalone home</a> with Spotify now-playing
+</sub></p>
+
 <img src="cards/what-i-do.svg" width="100%" alt="What I do: server-side measurement, consent, shipping releases and AI engineering"/>
 
 <img src="cards/stack.svg" width="100%" alt="Stack: server-side GTM, GA4, BigQuery, Meta CAPI, Consent Mode v2, OneTrust, n8n, Claude Code, TypeScript, React, GSAP, three.js, Web Audio"/>

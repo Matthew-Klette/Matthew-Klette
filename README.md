@@ -1,28 +1,34 @@
-<a href="https://golden-hour-smoky.vercel.app"><img src="cards/header.svg" width="100%" alt="Matt Klette. I measure what moves. Analytics engineer, motion designer, creative technologist."/></a>
+<a href="https://mbkconsultinggroup-portfolio.vercel.app"><img src="cards/header.svg" width="100%" alt="Matthew Klette. Numbers that agree. Sites you can step inside. Code that proves itself."/></a>
 
-<a href="https://golden-hour-smoky.vercel.app"><img src="cards/golden-hour.svg" width="100%" alt="Golden Hour: a 76-second kinetic portfolio intro where every sound and frame is code"/></a>
-
-<a href="https://aubade-eta.vercel.app"><img src="cards/aubade.svg" width="49.5%" alt="Aubade: concept site for a circadian lamp"/></a>
-<a href="https://nishiki.vercel.app"><img src="cards/nishiki.svg" width="49.5%" alt="Nishiki: a field guide to eight koi varieties, drawn live in code"/></a>
+<img src="cards/open-source.svg" width="100%" alt="Open source: patch-audit, inference-queue, full-stack casebook, UI task bench and couch-tv, each with what its tests prove"/>
 
 <p align="center"><sub>
-<b>Golden Hour</b> <a href="https://golden-hour-smoky.vercel.app">live</a> · <a href="https://github.com/Matthew-Klette/golden-hour">code</a>
+<a href="https://github.com/Matthew-Klette/patch-audit"><b>patch-audit</b></a> · Go
 &nbsp;&nbsp;|&nbsp;&nbsp;
-<b>Aubade</b> <a href="https://aubade-eta.vercel.app">live</a> · <a href="https://github.com/Matthew-Klette/aubade">code</a>
+<a href="https://github.com/Matthew-Klette/inference-queue"><b>inference-queue</b></a> · Go, Postgres, Redis
 &nbsp;&nbsp;|&nbsp;&nbsp;
-<b>Nishiki</b> <a href="https://nishiki.vercel.app">live</a> · <a href="https://github.com/Matthew-Klette/nishiki">code</a>
+<a href="https://github.com/Matthew-Klette/fullstack-casebook"><b>fullstack-casebook</b></a> · FastAPI, React
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="https://github.com/Matthew-Klette/ui-task-bench"><b>ui-task-bench</b></a> · React, SVG, Canvas
+<br/>
+Upstream: <a href="https://github.com/Seagey/couch-tv/pull/128">couch-tv #128</a> · <a href="https://github.com/Seagey/couch-tv/pull/141">#141</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+Also: <a href="https://github.com/Matthew-Klette/gs-code">gs-code</a> · <a href="https://github.com/Matthew-Klette/synthetic-crowd">synthetic-crowd</a>
 </sub></p>
 
-<p align="center"><sub>
-<b>Open source</b> · <a href="https://github.com/Seagey/couch-tv/pull/128">couch-tv</a>: first working Hisense VIDAA support on real hardware (modern-firmware mTLS/MQTT auth, PIN pairing, native app tile) + a <a href="https://github.com/Seagey/couch-tv/pull/141">no-computer standalone home</a> with Spotify now-playing
-</sub></p>
+<img src="cards/builds.svg" width="100%" alt="Frontend builds: every build is a real site"/>
+
+<a href="https://golden-hour-smoky.vercel.app"><img src="cards/build-goldenhour.svg" width="49.5%" alt="Golden Hour: a 76-second portfolio intro where every sound and every frame is code"/></a>
+<a href="https://aubade-eta.vercel.app"><img src="cards/build-aubade.svg" width="49.5%" alt="Aubade: a lamp that matches the daylight outside your window"/></a>
+<a href="https://nishiki.vercel.app"><img src="cards/build-nishiki.svg" width="49.5%" alt="Nishiki: eight koi varieties drawn live in code"/></a>
+<a href="https://heartbeat-six-livid.vercel.app"><img src="cards/build-heartbeat.svg" width="49.5%" alt="Heartbeat: a farewell to the last petrol Jaguar sports car"/></a>
 
 <img src="cards/what-i-do.svg" width="100%" alt="What I do: server-side measurement, consent, shipping releases and AI engineering"/>
 
-<img src="cards/stack.svg" width="100%" alt="Stack: server-side GTM, GA4, BigQuery, Meta CAPI, Consent Mode v2, OneTrust, n8n, Claude Code, TypeScript, React, GSAP, three.js, Web Audio"/>
+<img src="cards/stack.svg" width="100%" alt="Stack: measurement, data, AI and automation, backend, frontend and motion, mobile"/>
 
 <p align="center">
+<a href="https://mbkconsultinggroup-portfolio.vercel.app">Portfolio</a> ·
 <a href="https://www.linkedin.com/in/matthewklette">LinkedIn</a> ·
-<a href="https://golden-hour-smoky.vercel.app">Portfolio intro</a> ·
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7514394222310055936/">Watch the reel</a>
+<a href="https://golden-hour-smoky.vercel.app">Portfolio intro</a>
 </p>

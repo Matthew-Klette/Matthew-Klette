@@ -280,6 +280,55 @@ def builds_head():
     return svg(W, H, "".join(b), ["serif", "serif-i", "sans", "mono"], "Frontend builds: every build is a real site.")
 
 
+# --- product card -------------------------------------------------------------------
+PRODUCT = ("occupi", "Occupi", "Campus analytics", "Founder · Oct 2026",
+           "Shows which campus rooms are really in use from the Wi-Fi the campus already runs. "
+           "Students find a free seat in seconds; estates teams stop heating, cleaning and booking rooms nobody sits in.",
+           "No cameras, no new sensors: anonymous Wi-Fi counts every fifteen minutes, next to the timetable.",
+           "Next.js / TypeScript / Cloudflare Workers / SQLite", "occupiedu.com")
+
+
+def product_card():
+    slug, title, kind, meta, desc, proof, stack_s, domain = PRODUCT
+    W, H = 1200, 440
+    img_w = 600
+    shot = base64.b64encode(open(os.path.join(HERE, "shots", f"{slug}.jpg"), "rb").read()).decode()
+    b = [
+        f'<image href="data:image/jpeg;base64,{shot}" x="0" y="0" width="{img_w}" height="{H}" preserveAspectRatio="xMidYMin slice" clip-path="url(#c)"/>',
+        f'<line x1="{img_w}" y1="0" x2="{img_w}" y2="{H}" stroke="{HAIR}"/>',
+    ]
+    x = img_w + 40
+    tw = W - x - 40
+    y = 66
+    pw = width(kind, "sans", 13) + 24
+    b.append(f'<rect x="{x}" y="{y-19}" width="{pw:.1f}" height="27" rx="13.5" fill="{CANVAS}" stroke="{HAIR}"/>')
+    b.append(text(x + 12, y, kind, "sans", 13, BODY))
+    b.append(text(W - 40, y, meta.upper(), "mono", 12, MUTE, anchor="end"))
+    y += 62
+    b.append(text(x, y, title, "serif", 48, INK))
+    y += 40
+    for line in wrap(desc, "sans", 15.5, tw):
+        b.append(text(x, y, line, "sans", 15.5, CHARCOAL))
+        y += 25
+    y += 10
+    b.append(dot(x + 3, y - 5, 3.5))
+    for line in wrap(proof, "sans", 15.5, tw - 18):
+        b.append(text(x + 16, y, line, "sans", 15.5, INK))
+        y += 25
+    b.append(text(x, H - 40, stack_s.upper(), "mono", 12, MUTE))
+    b.append(dot(x + 3, H - 80, 3.5, GREEN, pulse=True))
+    b.append(text(x + 16, H - 75, f"LIVE · {domain.upper()}", "mono", 12, GREEN))
+    return svg(W, H, "".join(b), ["serif", "sans", "mono"], f"{title}: {desc}", bg=CARD)
+
+
+def product_head():
+    W, H = 1200, 196
+    b = [eyebrow(56, 74, "Product")]
+    b.append(heading(56, 136, "Something I run,", "not just built.", 50, delay=0.05))
+    b.append(text(56, 172, "My own product, live on its own domain. The card opens it.", "sans", 17, CHARCOAL))
+    return svg(W, H, "".join(b), ["serif", "serif-i", "sans", "mono"], "Product: something I run, not just built.")
+
+
 # --- what I do (ink band) -----------------------------------------------------------
 WHAT = [
     ("01 · Measurement", "0 → 59", "of 180 web tags now wait for consent",
@@ -351,6 +400,8 @@ def write(name, content):
 
 write("header.svg", header())
 write("open-source.svg", open_source())
+write("product.svg", product_head())
+write("product-occupi.svg", product_card())
 write("builds.svg", builds_head())
 for s, t, k, m, d, st in BUILDS:
     write(f"build-{s}.svg", build_card(s, t, k, m, d, st))

@@ -16,6 +16,10 @@ Upstream: <a href="https://github.com/Seagey/couch-tv/pull/128">couch-tv #128</a
 Also: <a href="https://github.com/Matthew-Klette/gs-code">gs-code</a> · <a href="https://github.com/Matthew-Klette/synthetic-crowd">synthetic-crowd</a>
 </sub></p>
 
+<img src="cards/product.svg" width="100%" alt="Product: something I run, not just built"/>
+
+<a href="https://occupiedu.com"><img src="cards/product-occupi.svg" width="100%" alt="Occupi: shows which campus rooms are really in use from the Wi-Fi the campus already runs. Live at occupiedu.com"/></a>
+
 <img src="cards/builds.svg" width="100%" alt="Frontend builds: every build is a real site"/>
 
 <a href="https://golden-hour-smoky.vercel.app"><img src="cards/build-goldenhour.svg" width="49.5%" alt="Golden Hour: a 76-second portfolio intro where every sound and every frame is code"/></a>
@@ -29,6 +33,7 @@ Also: <a href="https://github.com/Matthew-Klette/gs-code">gs-code</a> · <a href
 
 <p align="center">
 <a href="https://mbkconsultinggroup-portfolio.vercel.app">Portfolio</a> ·
+<a href="https://occupiedu.com">Occupi</a> ·
 <a href="https://www.linkedin.com/in/matthewklette">LinkedIn</a> ·
 <a href="https://golden-hour-smoky.vercel.app">Portfolio intro</a>
 </p>
